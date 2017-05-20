@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script src="http://www.stefanzh.com/projects/MyTube/server/jwplayer/jwplayer.js" type="text/javascript"></script>
+</head>
+<body style="width:520; height:380; background-color:#000000; margin:0px; padding:0px; ">
+<div id="container" style="width=100%; height=100%; background-color:#000000; margin:0px; padding:0px; ">Loading the player ...</div>
+<script type="text/javascript">
+ jwplayer("container").setup({
+  flashplayer: "http://www.stefanzh.com/projects/MyTube/server/jwplayer/player.swf",
+  allowfullscreen: "true",
+  allowscriptaccess: "true",
+  bufferlength: "1",
+  stretching: "uniform",
+  bgcolor: "#000000",
+  wmode: "opaque",
+  height: 380,
+  width: 520,
+  events: { onComplete: function() { document.location = "http://www.stefanzh.com/projects/MyTube/server/embed.html"; } }, 
+  file: "file=http://www.youtube.com/watch?v=j5-yKhDd64s",
+  autostart: "false"
+ });
+</script>
+</html>
