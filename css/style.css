@@ -458,18 +458,18 @@ header
 #resume .button
 {
 	background-color: #8c8c8c;
-	border-radius: 0px 4px 4px 0px;
+	border-radius: 0 4px 4px 0;
 	color: #f7f7f7;
 	display: block;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 20px;
-	margin: 20px 0px 0px -20px;
-	moz-border-radius: 0px 4px 4px 0px;
+	margin: -15px 0 10px -20px;
+	moz-border-radius: 0 4px 4px 0;
 	overflow: hidden;
 	padding: 10px;
 	text-align: center;
-	webkit-border-radius: 0px 4px 4px 0px;
+	webkit-border-radius: 0 4px 4px 0;
 	width: 250px;
 }
 #resume .button:hover
