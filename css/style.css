@@ -587,6 +587,23 @@ header
 	z-index: 15;
 }
 
+#certificates {
+  overflow: hidden;
+  padding: 40px 20px;
+}
+#certificates .timeline {
+	float: none;
+	margin-bottom: 30px;
+}
+#certificates .timeline li {
+	float: none;
+	padding-right: 30px;
+}
+#certificates a {
+	display: block;
+	padding-top: 8px;
+}
+
 #papers
 {
 	overflow: hidden;
