@@ -476,7 +476,7 @@
                         if (movie_id.indexOf("?") > 0) movie_id = movie_id.substr(0, movie_id.indexOf("?"));
                         if (movie_id.indexOf("&") > 0) movie_id = movie_id.substr(0, movie_id.indexOf("&"))
                     }
-                    movie = "http://www.youtube.com/embed/" + movie_id;
+                    movie = "https://www.youtube.com/embed/" + movie_id;
                     i("rel", pp_images[set_position]) ? movie += "?rel=" + i("rel", pp_images[set_position]) : movie += "?rel=1";
                     if (settings.autoplay) movie += "&autoplay=1";
                     toInject = settings.iframe_markup.replace(/{width}/g, a["width"]).replace(/{height}/g, a["height"]).replace(/{wmode}/g, settings.wmode).replace(/{path}/g, movie);
