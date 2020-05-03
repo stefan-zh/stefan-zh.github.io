@@ -999,10 +999,10 @@ form p label
 	font-size: 13px;
 	margin-bottom: 8px;
 }
-.button
-{
+.button {
 	background-color: #666;
 	border: none;
+	display: inline-block;
 	border-radius: 3px;
 	color: #fff;
 	cursor: pointer;
