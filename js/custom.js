@@ -201,34 +201,4 @@ jQuery(document).ready(function(){
 		 });
 		return false;
 	});	
-	/* ---------------------------------------------------------------------- */
-	/*	Google Maps
-	/* ---------------------------------------------------------------------- */
-	
-	// Needed variables
-	var $map 				= $('#map'),
-		$tabContactClass 	= ('tab-contact'),
-		$lat 				= '40.7142',
-		$lon 				= '-74.0064';
-
-	$map.gmap().bind('init', function(ev, map) {
-		$map.gmap('addMarker', {'position': $lat +','+ $lon  , 'bounds': true}).click(function() {
-			$map.gmap('openInfoWindow', {
-            'content': 'Hello everyone! Please refer to the contact<br />form below and send me a message!',
-            'autoscroll': true,
-            'maxWidth': 350,
-            'maxHeight': 150
-         }, this);
-		});
-		$map.gmap('option', 'zoom', 12);
-	});
-
-	// Refresh Map
-	$content.bind('easytabs:after', function(evt,tab,panel) {
-		$map.gmap('refresh'); 
-  	});
-
-      
-  
-
 });	
