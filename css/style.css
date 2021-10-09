@@ -1193,39 +1193,42 @@ div.footer .copyright
 		width: 420px;
 	}
 }
+
+/**
+ * Styles for small screens (below 480px wide)
+ */
 @media screen and (max-width: 479px)
 {
 	#container {
 		margin-top: 10px;
 		width: 300px;
 	}
+	header {
+		height: 20px;
+	}
 	.socialicons {
 		display: none;
 	}
 	.about {
-		display: block;
-		margin: 10px 0 15px 10px;
-		width: 280px;
+		display: flex;
+		flex-flow: row wrap;
+		text-align: center;
+		margin: 30px 0 0;
+		width: 100%;
+	}
+	.about > * {
+		flex: 1 100%;
 	}
 	.about .photo-inner {
-		background: url(../images/photo-inner.png) no-repeat;
-		height: 212px;
-		margin-left: 40px;
-		padding: 12px 0 0 20px;
-		width: 192px;
+		background: url(../images/photo-inner.png) no-repeat center;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
-		text-align: center;
-	}
-	.about h3 {
-		font-size: 14px;
-		line-height: 14px;
-		text-align: center;
-	}
-	.about p {
-		text-align: center;
 	}
 	.personal-info {
 		background: none;
