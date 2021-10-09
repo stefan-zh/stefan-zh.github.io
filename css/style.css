@@ -1195,56 +1195,39 @@ div.footer .copyright
 }
 @media screen and (max-width: 479px)
 {
-	#container
-	{
+	#container {
 		margin-top: 10px;
 		width: 300px;
 	}
-	.extra-text
-	{
-		font-size: 16px;
-	}
-	.socialicons
-	{
+	.socialicons {
 		display: none;
 	}
-	div.top
-	{
-		height: 50px;
-		margin-bottom: 5px;
-	}
-	.about
-	{
+	.about {
 		display: block;
 		margin: 10px 0 15px 10px;
 		width: 280px;
 	}
-	.about .photo-inner
-	{
+	.about .photo-inner {
 		background: url(../images/photo-inner.png) no-repeat;
 		height: 212px;
 		margin-left: 40px;
 		padding: 12px 0 0 20px;
 		width: 192px;
 	}
-	.about h1
-	{
+	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
 		text-align: center;
 	}
-	.about h3
-	{
+	.about h3 {
 		font-size: 14px;
 		line-height: 14px;
 		text-align: center;
 	}
-	.about p
-	{
+	.about p {
 		text-align: center;
 	}
-	.personal-info
-	{
+	.personal-info {
 		background: none;
 		border-top: 1px solid #fdc750;
 		display: block;
@@ -1254,29 +1237,13 @@ div.footer .copyright
 		padding-left: 0;
 		width: 280px;
 	}
-	.personal-info li
-	{
+	.personal-info li {
 		font-size: 13px;
 	}
-	.personal-info li span
-	{
+	.personal-info li span {
 		width: 200px;
 	}
-	.tabs
-	{
-		padding-left: 0px;
-	}
-	.tabs li > a
-	{
-		font-size: 14px;
-		width: 75px;
-	}
-	.tabs li.active
-	{
-		background-image: none !important;
-	}
-	.menu
-	{
+	.menu {
 		background-color: #ededed;
 		height: 100px;
 		padding-left: 50px;
@@ -1284,90 +1251,34 @@ div.footer .copyright
 		position: relative;
 		width: 200px;
 	}
-	#resume
-	{
+	.tabs {
+		padding-left: 0px;
+	}
+	.tabs li > a {
+		font-size: 14px;
+		width: 75px;
+	}
+	.tabs li.active {
+		background-image: none !important;
+	}
+	#resume {
 		padding: 10px;
 	}
-	.timeline-section
-	{
+	.timeline-section {
 		padding-right: 60px;
 		width: 280px;
 	}
-	.skills-section
-	{
+	.skills-section {
 		width: 280px;
 	}
-	.skills li h4
-	{
+	.skills li h4 {
 		width: 120px;
 	}
-	#projects-list
-	{
+	#projects-list {
 		width: 280px;
 	}
-	#projects-list li
-	{
+	#projects-list li {
 		margin-left: 40px;
-	}
-	.blog-content-wrapper
-	{
-		width: 260px;
-	}
-	.blog-entry img
-	{
-		width: 260px;
-	}
-	.blog-sidebar
-	{
-		margin-left: 0px;
-		width: 260px;
-	}
-	.comment .comment-meta
-	{
-		margin-top: 10px;
-		width: 180px;
-	}
-	.comment .comment-meta p
-	{
-		clear: both;
-		display: block;
-		margin-left: 0px;
-		margin-top: 6px;
-	}
-	.comment .comment-body
-	{
-		margin-left: 0;
-		width: 240px;
-	}
-	.comment-child .comment-meta
-	{
-		margin-top: 10px;
-		width: 160px !important;
-	}
-	.comment-child .comment-meta p
-	{
-		clear: both;
-		display: block;
-		margin-left: 0px;
-		margin-top: 6px;
-	}
-	.comment-child .comment-body
-	{
-		margin-left: 0;
-		width: 220px !important;
-	}
-	.contact-info
-	{
-		width: 280px;
-	}
-	.contact-form
-	{
-		margin-top: 20px;
-		width: 280px;
-	}
-	.contact-info, .contact-form
-	{
-		padding: 0 10px;
 	}
 }
 
