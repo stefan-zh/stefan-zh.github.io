@@ -31,6 +31,11 @@ h5 {
 	margin-top: 30px;
 	width: 860px;
 }
+header {
+	height: 60px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
 #content {
 	background-color: #FFF;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
@@ -71,33 +76,6 @@ h3.main-heading::after
 	left: 0;
 	position: absolute;
 	width: 40px;
-}
-header
-{
-	height: 60px;
-	margin-bottom: 20px;
-	overflow: hidden;
-}
-
-
-#logo
-{
-	display: none;
-	float: left;
-	margin-left: 10px;
-	overflow: hidden;
-}
-#logo h2
-{
-	color: #444;
-	font-size: 30px;
-	font-weight: 900;
-	line-height: 40px;
-}
-#logo h4
-{
-	color: #666;
-	line-height: 20px;
 }
 .socialicons
 {
@@ -1025,6 +1003,7 @@ div.footer .copyright
 	transition-property: transform, opacity;
 	webkit-transition-property: -webkit-transform, opacity;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 959px)
 {
 	#container
@@ -1107,23 +1086,12 @@ div.footer .copyright
 		width: 420px;
 	}
 }
+
 @media only screen and (min-width: 480px) and (max-width: 767px)
 {
 	#container
 	{
 		width: 470px;
-	}
-	#logo h2
-	{
-		color: #444;
-		font-size: 25px;
-		font-weight: 900;
-		line-height: 30px;
-	}
-	#logo h4
-	{
-		color: #666;
-		line-height: 15px;
 	}
 	.socialicons
 	{
@@ -1235,18 +1203,6 @@ div.footer .copyright
 	.extra-text
 	{
 		font-size: 16px;
-	}
-	#logo h2
-	{
-		color: #444;
-		font-size: 25px;
-		font-weight: 900;
-		line-height: 30px;
-	}
-	#logo h4
-	{
-		color: #666;
-		line-height: 15px;
 	}
 	.socialicons
 	{
