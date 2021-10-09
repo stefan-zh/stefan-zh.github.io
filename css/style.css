@@ -1245,11 +1245,8 @@ div.footer .copyright
 		width: 190px;
 	}
 	.menu {
-		background-color: #ededed;
-		height: 100px;
 		padding-left: 50px;
 		padding-right: 50px;
-		position: relative;
 		width: 200px;
 	}
 	.tabs {
@@ -1260,7 +1257,7 @@ div.footer .copyright
 		width: 75px;
 	}
 	.tabs li.active {
-		background-image: none !important;
+		background-image: none;
 	}
 	#resume {
 		padding: 10px;
