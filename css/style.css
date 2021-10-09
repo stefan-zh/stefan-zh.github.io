@@ -1004,7 +1004,7 @@ div.footer .copyright
 	webkit-transition-property: -webkit-transform, opacity;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px)
+@media screen and (min-width: 768px) and (max-width: 959px)
 {
 	#container
 	{
@@ -1087,7 +1087,7 @@ div.footer .copyright
 	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px)
+@media screen and (min-width: 480px) and (max-width: 767px)
 {
 	#container
 	{
@@ -1193,7 +1193,7 @@ div.footer .copyright
 		width: 420px;
 	}
 }
-@media only screen and (max-width: 479px)
+@media screen and (max-width: 479px)
 {
 	#container
 	{
@@ -1370,10 +1370,13 @@ div.footer .copyright
 		padding: 0 10px;
 	}
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max-moz-device-pixel-ratio: 2)
-{
-	.tabs li.active
-	{
+
+/**
+ * On screens where the pixel density is 2 times higher, use a larger tab image
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/resolution
+ */
+@media screen and (resolution: 2dppx) {
+	.tabs li.active {
 		background: url('../images/tab-hover@2x.png') no-repeat;
 		background-size: 116px 114px;
 	}
