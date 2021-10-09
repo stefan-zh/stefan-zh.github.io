@@ -116,8 +116,9 @@ h3.main-heading::after
 }
 
 
-#profile
-{
+#profile {
+	display: flex;
+	flex-flow: row wrap;
 	background: #fdc750;
 	background-image: url(../images/header-shadow.png);
 	background-position: center bottom;
@@ -1232,19 +1233,16 @@ div.footer .copyright
 	}
 	.personal-info {
 		background: none;
-		border-top: 1px solid #fdc750;
-		display: block;
-		margin-left: 10px;
-		margin-top: 0;
+		margin: 10px;
 		min-height: 220px;
-		padding-left: 0;
-		width: 280px;
+		padding: 0;
+		width: 100%;
 	}
 	.personal-info li {
 		font-size: 13px;
 	}
 	.personal-info li span {
-		width: 200px;
+		width: 190px;
 	}
 	.menu {
 		background-color: #ededed;
