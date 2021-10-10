@@ -1,9 +1,7 @@
-html
-{
+html {
 	overflow-y: scroll;
 }
-body
-{
+body {
 	background-color: #E8E8E8;
 	font-family: 'open Sans', Arial;
 	font-size: 12px;
@@ -11,26 +9,41 @@ body
 	padding: 0px;
 }
 
-#container
-{
+h1 {
+	font-size: 37px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 15px;
+}
+h5 {
+	font-size: 13px;
+}
+
+#container {
 	margin: 0 auto;
 	margin-bottom: 20px;
 	margin-top: 30px;
 	width: 860px;
 }
-#content
-{
+header {
+	height: 60px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#content {
 	background-color: #FFF;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-	moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-	webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
-.hidden
-{
+.hidden {
 	display: none;
 }
-.clear
-{
+.clear {
 	clear: both;
 	display: block;
 	height: 0;
@@ -38,75 +51,8 @@ body
 	visibility: hidden;
 	width: 0;
 }
-.clearfix:after
-{
-	clear: both;
-	content: ' ';
-	display: block;
-	font-size: 0;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
-	width: 0;
-}
-* html .clearfix,:first-child+html .clearfix
-{
-	zoom: 1;
-}
-.extra-text
-{
-	border-bottom: 1px solid #ededed;
-	color: #999;
-	font-size: 20px;
-	font-weight: 300;
-	margin-bottom: 20px;
-	padding: 24px 0;
-}
-.transition
-{
-	moz-transition: all .5s ease;
-	ms-transition: all .5s ease;
-	o-transition: all .5s ease;
+.transition {
 	transition: all .5s ease;
-	webkit-transition: all .5s ease;
-}
-.word-wrap
-{
-	hyphens: auto;
-	moz-hyphens: auto;
-	ms-word-break: break-all;
-	webkit-hyphens: auto;
-	word-break: break-all;
-	word-wrap: break-word;
-}
-h1
-{
-	font-size: 37px;
-}
-h2
-{
-	font-size: 30px;
-}
-h3
-{
-	font-size: 20px;
-}
-h4
-{
-	font-size: 15px;
-}
-h5
-{
-	font-size: 13px;
-}
-h6
-{
-	font-size: 12px;
-}
-strong
-{
-	color: #333;
-	font-weight: bold;
 }
 h3.main-heading
 {
@@ -130,33 +76,6 @@ h3.main-heading::after
 	left: 0;
 	position: absolute;
 	width: 40px;
-}
-header
-{
-	height: 60px;
-	margin-bottom: 20px;
-	overflow: hidden;
-}
-
-
-#logo
-{
-	display: none;
-	float: left;
-	margin-left: 10px;
-	overflow: hidden;
-}
-#logo h2
-{
-	color: #444;
-	font-size: 30px;
-	font-weight: 900;
-	line-height: 40px;
-}
-#logo h4
-{
-	color: #666;
-	line-height: 20px;
 }
 .socialicons
 {
@@ -197,8 +116,9 @@ header
 }
 
 
-#profile
-{
+#profile {
+	display: flex;
+	flex-flow: row wrap;
 	background: #fdc750;
 	background-image: url(../images/header-shadow.png);
 	background-position: center bottom;
@@ -1084,7 +1004,8 @@ div.footer .copyright
 	transition-property: transform, opacity;
 	webkit-transition-property: -webkit-transform, opacity;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px)
+
+@media screen and (min-width: 768px) and (max-width: 959px)
 {
 	#container
 	{
@@ -1166,23 +1087,12 @@ div.footer .copyright
 		width: 420px;
 	}
 }
-@media only screen and (min-width: 480px) and (max-width: 767px)
+
+@media screen and (min-width: 480px) and (max-width: 767px)
 {
 	#container
 	{
 		width: 470px;
-	}
-	#logo h2
-	{
-		color: #444;
-		font-size: 25px;
-		font-weight: 900;
-		line-height: 30px;
-	}
-	#logo h4
-	{
-		color: #666;
-		line-height: 15px;
 	}
 	.socialicons
 	{
@@ -1284,199 +1194,94 @@ div.footer .copyright
 		width: 420px;
 	}
 }
-@media only screen and (max-width: 479px)
+
+/**
+ * Styles for small screens (below 480px wide)
+ */
+@media screen and (max-width: 479px)
 {
-	#container
-	{
+	#container {
 		margin-top: 10px;
 		width: 300px;
 	}
-	.extra-text
-	{
-		font-size: 16px;
+	header {
+		height: 20px;
 	}
-	#logo h2
-	{
-		color: #444;
-		font-size: 25px;
-		font-weight: 900;
-		line-height: 30px;
-	}
-	#logo h4
-	{
-		color: #666;
-		line-height: 15px;
-	}
-	.socialicons
-	{
+	.socialicons {
 		display: none;
 	}
-	div.top
-	{
-		height: 50px;
-		margin-bottom: 5px;
+	.about {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		text-align: center;
+		margin: 30px 0 10px 0;
+		width: 100%;
 	}
-	.about
-	{
-		display: block;
-		margin: 10px 0 15px 10px;
-		width: 280px;
+	.about > * {
+		flex: 1 100%;
 	}
-	.about .photo-inner
-	{
-		background: url(../images/photo-inner.png) no-repeat;
-		height: 212px;
-		margin-left: 40px;
-		padding: 12px 0 0 20px;
-		width: 192px;
+	.about .photo-inner {
+		background: url(../images/photo-inner.png) no-repeat center;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-	.about h1
-	{
+	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
-		text-align: center;
+		margin: 0;
 	}
-	.about h3
-	{
-		font-size: 14px;
-		line-height: 14px;
-		text-align: center;
-	}
-	.about p
-	{
-		text-align: center;
-	}
-	.personal-info
-	{
+	.personal-info {
 		background: none;
-		border-top: 1px solid #fdc750;
-		display: block;
-		margin-left: 10px;
-		margin-top: 0;
-		min-height: 220px;
-		padding-left: 0;
-		width: 280px;
+		margin: 10px;
+		min-height: 200px;
+		padding: 0;
+		width: 100%;
 	}
-	.personal-info li
-	{
+	.personal-info li {
 		font-size: 13px;
 	}
-	.personal-info li span
-	{
+	.personal-info li span {
+		width: 190px;
+	}
+	.menu {
+		padding-left: 50px;
+		padding-right: 50px;
 		width: 200px;
 	}
-	.tabs
-	{
-		padding-left: 0px;
-	}
-	.tabs li > a
-	{
+	.tabs li > a {
 		font-size: 14px;
 		width: 75px;
 	}
-	.tabs li.active
-	{
-		background-image: none !important;
+	.tabs li.active {
+		background-image: none;
 	}
-	.menu
-	{
-		background-color: #ededed;
-		height: 100px;
-		padding-left: 50px;
-		padding-right: 50px;
-		position: relative;
-		width: 200px;
+	.timeline-section {
+		padding: 0;
+		width: 100%;
 	}
-	#resume
-	{
-		padding: 10px;
+	.skills-section {
+		width: 100%;
 	}
-	.timeline-section
-	{
-		padding-right: 60px;
-		width: 280px;
-	}
-	.skills-section
-	{
-		width: 280px;
-	}
-	.skills li h4
-	{
+	.skills li h4 {
 		width: 120px;
 	}
-	#projects-list
-	{
-		width: 280px;
+	#projects-list {
+		width: 100%;
 	}
-	#projects-list li
-	{
+	#projects-list li {
 		margin-left: 40px;
 	}
-	.blog-content-wrapper
-	{
-		width: 260px;
-	}
-	.blog-entry img
-	{
-		width: 260px;
-	}
-	.blog-sidebar
-	{
-		margin-left: 0px;
-		width: 260px;
-	}
-	.comment .comment-meta
-	{
-		margin-top: 10px;
-		width: 180px;
-	}
-	.comment .comment-meta p
-	{
-		clear: both;
-		display: block;
-		margin-left: 0px;
-		margin-top: 6px;
-	}
-	.comment .comment-body
-	{
-		margin-left: 0;
-		width: 240px;
-	}
-	.comment-child .comment-meta
-	{
-		margin-top: 10px;
-		width: 160px !important;
-	}
-	.comment-child .comment-meta p
-	{
-		clear: both;
-		display: block;
-		margin-left: 0px;
-		margin-top: 6px;
-	}
-	.comment-child .comment-body
-	{
-		margin-left: 0;
-		width: 220px !important;
-	}
-	.contact-info
-	{
-		width: 280px;
-	}
-	.contact-form
-	{
-		margin-top: 20px;
-		width: 280px;
-	}
-	.contact-info, .contact-form
-	{
-		padding: 0 10px;
-	}
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max-moz-device-pixel-ratio: 2)
-{
-	.tabs li.active
-	{
+
+/**
+ * On screens where the pixel density is 2 times higher, use a larger tab image
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/resolution
+ */
+@media screen and (resolution: 2dppx) {
+	.tabs li.active {
 		background: url('../images/tab-hover@2x.png') no-repeat;
 		background-size: 116px 114px;
 	}
