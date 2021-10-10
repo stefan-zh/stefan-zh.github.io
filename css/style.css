@@ -1212,9 +1212,10 @@ div.footer .copyright
 	}
 	.about {
 		display: flex;
-		flex-flow: row wrap;
+		flex-wrap: wrap;
+		gap: 5px;
 		text-align: center;
-		margin: 30px 0 0;
+		margin: 30px 0 10px 0;
 		width: 100%;
 	}
 	.about > * {
@@ -1230,11 +1231,12 @@ div.footer .copyright
 	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
+		margin: 0;
 	}
 	.personal-info {
 		background: none;
 		margin: 10px;
-		min-height: 220px;
+		min-height: 200px;
 		padding: 0;
 		width: 100%;
 	}
@@ -1249,9 +1251,6 @@ div.footer .copyright
 		padding-right: 50px;
 		width: 200px;
 	}
-	.tabs {
-		padding-left: 0px;
-	}
 	.tabs li > a {
 		font-size: 14px;
 		width: 75px;
@@ -1259,21 +1258,18 @@ div.footer .copyright
 	.tabs li.active {
 		background-image: none;
 	}
-	#resume {
-		padding: 10px;
-	}
 	.timeline-section {
-		padding-right: 60px;
-		width: 280px;
+		padding: 0;
+		width: 100%;
 	}
 	.skills-section {
-		width: 280px;
+		width: 100%;
 	}
 	.skills li h4 {
 		width: 120px;
 	}
 	#projects-list {
-		width: 280px;
+		width: 100%;
 	}
 	#projects-list li {
 		margin-left: 40px;
