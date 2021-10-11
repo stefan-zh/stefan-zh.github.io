@@ -5,8 +5,7 @@ body {
 	background-color: #E8E8E8;
 	font-family: 'open Sans', Arial;
 	font-size: 12px;
-	margin: 0px;
-	padding: 0px;
+	line-height: 1;
 }
 
 h1 {
@@ -25,16 +24,22 @@ h5 {
 	font-size: 13px;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
 #container {
 	margin: 0 auto;
-	margin-bottom: 20px;
-	margin-top: 30px;
 	width: 860px;
 }
 header {
 	height: 60px;
-	margin-bottom: 20px;
-	overflow: hidden;
+	margin: 20px 0;
 }
 #content {
 	background-color: #FFF;
