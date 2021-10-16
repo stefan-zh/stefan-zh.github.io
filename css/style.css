@@ -360,24 +360,16 @@ h3.main-heading::after
 	font-size: 15px;
 	width: 140px;
 }
-.skills li .rating
-{
-	float: left;
-	height: 14px;
+.skills li .rating {
+	display: flex;
 	width: 123px;
 }
-.skills li .rating > span
-{
+.skills li .rating > span {
 	background-color: #757575;
-	border: 2px solid #eeeeee;
-	border-radius: 20px;
-	display: block;
-	float: left;
+	border-radius: 10px;
+	margin: 0 2.5px;
 	height: 12px;
-	margin-right: 1px;
-	moz-border-radius: 20px;
 	opacity: 0.3;
-	webkit-border-radius: 20px;
 	width: 12px;
 }
 #resume .button

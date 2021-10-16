@@ -1,50 +1,21 @@
 jQuery(document).ready(function () {
 
 	/* ---------------------------------------------------------------------- */
-	/*	Custom Functions
-	/* ---------------------------------------------------------------------- */
-
-	// Logo
-	var $logo = $('#logo');
-
-	if (location.href.indexOf("#") != -1) {
-		$logo.show();
-	}
-	// Show logo 
-	$('.menu .tabs a').click(function () {
-		$logo.fadeIn('slow');
-	});
-	// Hide logo
-	$('.tab-profile').click(function () {
-		$logo.fadeOut('slow');
-	});
-
-	/* ---------------------------------------------------------------------- */
 	/*	Resume
 	/* ---------------------------------------------------------------------- */
 
 	// Rating bars
-	$(".skills li .rating").each(function (index, e) {
+	$(".skills li .rating").each((_, e) => {
 
-		// Vars
-		var
-			$ratNum = 7,
-			$rat = $(e).attr("data-rat"),
-			$point = "<span></span>";
-
+		let rat = $(e).attr("data-rat");		
 		// Append points
-		while ($ratNum > 0) {
-			$(e).append($point);
-			$ratNum--;
+		for (let i = 0; i < 7; i++) {
+			let point = $("<span />");
+			if (i < rat) {
+				$(point).css({opacity: 1});
+			}
+			$(e).append(point);
 		}
-
-		$(e).find("span").each(function (index, e) {
-			if (index >= $rat) return false;
-			// Append Disabled Rats
-			$(e).animate({
-				opacity: 1
-			});
-		});
 
 	});
 
@@ -171,33 +142,5 @@ jQuery(document).ready(function () {
 		theme: 'pp_default',
 		horizontal_padding: 5,
 	});
-
-	/* ---------------------------------------------------------------------- */
-	/*	Contact Form
-	/* ---------------------------------------------------------------------- */
-
-	// Needed variables
-	var $contactform = $('#contactform'),
-		$success = 'Your message has been sent. Thank you!';
-
-	$contactform.submit(function () {
-		$.ajax({
-			type: "POST",
-			url: "php/contact.php",
-			data: $(this).serialize(),
-			success: function (msg) {
-				if (msg == 'SEND') {
-					response = '<div class="success">' + $success + '</div>';
-				}
-				else {
-					response = '<div class="error">' + msg + '</div>';
-				}
-				// Hide any previous response text
-				$(".error,.success").remove();
-				// Show response message
-				$contactform.prepend(response);
-			}
-		});
-		return false;
-	});
+	
 });
