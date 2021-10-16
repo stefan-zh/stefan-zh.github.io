@@ -214,20 +214,17 @@ h3.main-heading::after
 	position: relative;
 	width: 600px;
 }
-.tabs
-{
+.tabs {
 	height: 116px;
 	margin-top: -14px;
 	position: absolute;
 	z-index: 100;
 }
-.tabs li
-{
+.tabs li {
 	float: left;
 	height: 116px;
 }
-.tabs li > a
-{
+.tabs li > a {
 	background-repeat: no-repeat;
 	color: #b9b9b9;
 	display: inline-block;
@@ -236,22 +233,24 @@ h3.main-heading::after
 	padding-top: 28px;
 	text-align: center;
 	width: 115px;
+	transition: top ease 0.5s;
+	position: relative;
+	top: 0;
 }
-.tabs li.active
-{
+.tabs li > a:hover {
+	top: -10px;
+}
+.tabs li.active {
 	background: url('../images/tab-hover.png') no-repeat;
 }
-.tabs li.active a
-{
+.tabs li.active a {
 	color: #fdc750;
 }
-.tabs li > a > i
-{
+.tabs li > a > i {
 	display: block;
 	font-family: 'icomoon';
 	font-size: 45px;
 	margin-bottom: 5px;
-	speak: none;
 }
 .next,.prev
 {
@@ -1126,8 +1125,7 @@ div.footer .copyright
 	{
 		width: 280px;
 	}
-	.tabs
-	{
+	.tabs {
 		padding-left: 5px;
 	}
 	.menu

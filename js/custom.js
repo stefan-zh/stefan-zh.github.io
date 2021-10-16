@@ -37,16 +37,6 @@ jQuery(document).ready(function () {
 		tabActiveClass: 'active',
 	});
 
-
-	// Hover menu effect
-	$content.find('.tabs li a').hover(
-		function () {
-			$(this).stop().animate({ marginTop: "-7px" }, 200);
-		}, function () {
-			$(this).stop().animate({ marginTop: "0px" }, 300);
-		}
-	);
-
 	// Menu Navigation
 	$(".menu .tabs").carouFredSel({
 		responsive: true,
