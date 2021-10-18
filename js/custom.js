@@ -6,7 +6,6 @@ jQuery(document).ready(function () {
 
 	// Rating bars
 	$(".skills li .rating").each((_, e) => {
-
 		let rat = $(e).attr("data-rat");		
 		// Append points
 		for (let i = 0; i < 7; i++) {
@@ -16,7 +15,6 @@ jQuery(document).ready(function () {
 			}
 			$(e).append(point);
 		}
-
 	});
 
 	/* ---------------------------------------------------------------------- */
@@ -37,38 +35,6 @@ jQuery(document).ready(function () {
 		tabActiveClass: 'active',
 	});
 
-	// Menu Navigation
-	$(".menu .tabs").carouFredSel({
-		responsive: true,
-		direction: "left",
-		circular: false,
-		infinite: false,
-		pagination: "#menu-controls",
-		auto: false,
-		scroll: {
-			items: 1,
-			duration: 300,
-			wipe: true
-		},
-		prev: {
-			button: "#menu-prev",
-			key: "right"
-		},
-		next: {
-			button: "#menu-next",
-			key: "left"
-		},
-		swipe: {
-			onTouch: true
-		},
-		items: {
-			width: 140,
-			visible: {
-				min: 2,
-				max: 5
-			}
-		}
-	});
 	/* ---------------------------------------------------------------------- */
 	/*	Cats Filter
 	/* ---------------------------------------------------------------------- */

@@ -187,50 +187,37 @@ h3.main-heading::after
 	margin-bottom: 10px;
 	overflow: hidden;
 }
-.personal-info li label
-{
+.personal-info li label {
 	border-radius: 3px;
 	color: #a87f09;
 	float: left;
 	font-weight: 600;
-	moz-border-radius: 3px;
 	padding: 4px 7px;
-	webkit-border-radius: 3px;
 }
-.personal-info li span
-{
+.personal-info li span {
 	color: #a87f09;
 	float: right;
 	font-weight: 300;
 	padding-top: 4px;
 	width: 210px;
 }
-.menu
-{
+
+.menu {
 	background-color: #ededed;
-	height: 100px;
-	padding-left: 130px;
-	padding-right: 130px;
-	position: relative;
-	width: 600px;
 }
 .tabs {
-	height: 116px;
-	margin-top: -14px;
-	position: absolute;
-	z-index: 100;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .tabs li {
-	float: left;
-	height: 116px;
+	padding: 20px 0;
 }
 .tabs li > a {
-	background-repeat: no-repeat;
 	color: #b9b9b9;
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 300;
-	padding-top: 28px;
 	text-align: center;
 	width: 115px;
 	transition: top ease 0.5s;
@@ -241,6 +228,7 @@ h3.main-heading::after
 	top: -10px;
 }
 .tabs li.active {
+	margin-top: -14px;
 	background: url('../images/tab-hover.png') no-repeat;
 }
 .tabs li.active a {
@@ -251,30 +239,6 @@ h3.main-heading::after
 	font-family: 'icomoon';
 	font-size: 45px;
 	margin-bottom: 5px;
-}
-.next,.prev
-{
-	background-color: #ccc;
-	color: #eee;
-	cursor: pointer;
-	font-family: 'icomoon';
-	font-size: 34px;
-	position: absolute;
-	text-align: center;
-	top: 30px;
-	width: 40px;
-}
-.next
-{
-	right: 0px;
-}
-.prev
-{
-	left: 0px;
-}
-.disabled
-{
-	display: none !important;
 }
 
 
@@ -1007,15 +971,6 @@ div.footer .copyright
 	{
 		width: 750px;
 	}
-	.menu
-	{
-		background-color: #ededed;
-		height: 100px;
-		padding-left: 80px;
-		padding-right: 80px;
-		position: relative;
-		width: 590px;
-	}
 	.about
 	{
 		width: 410px;
@@ -1125,18 +1080,6 @@ div.footer .copyright
 	{
 		width: 280px;
 	}
-	.tabs {
-		padding-left: 5px;
-	}
-	.menu
-	{
-		background-color: #ededed;
-		height: 100px;
-		padding-left: 50px;
-		padding-right: 50px;
-		position: relative;
-		width: 370px;
-	}
 	.skills-section
 	{
 		width: 420px;
@@ -1241,16 +1184,8 @@ div.footer .copyright
 	.personal-info li span {
 		width: 190px;
 	}
-	.menu {
-		padding-left: 50px;
-		padding-right: 50px;
-		width: 200px;
-	}
-	.tabs li > a {
-		font-size: 14px;
-		width: 75px;
-	}
 	.tabs li.active {
+		margin-top: 0;
 		background-image: none;
 	}
 	.timeline-section {
