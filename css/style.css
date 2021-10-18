@@ -1,6 +1,3 @@
-html {
-	overflow-y: scroll;
-}
 body {
 	background-color: #E8E8E8;
 	font-family: 'open Sans', Arial;
@@ -48,17 +45,10 @@ header {
 .hidden {
 	display: none;
 }
-.clear {
-	clear: both;
-	display: block;
-	height: 0;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-}
 .transition {
 	transition: all .5s ease;
 }
+
 h3.main-heading
 {
 	border-bottom: 1px solid #ebebeb;
