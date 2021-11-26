@@ -35,7 +35,7 @@ ol, ul {
 	width: 860px;
 }
 header {
-	height: 60px;
+	padding: 10px 0;
 	margin: 20px 0;
 }
 #content {
@@ -47,6 +47,28 @@ header {
 }
 .transition {
 	transition: all .5s ease;
+}
+
+.socialicons {
+	display: flex;
+	justify-content: right;
+	gap: 2px;
+}
+.socialicons * {
+	background-color: #222;
+	color: #FFF;
+}
+.socialicons a {
+	font-family: 'icomoon';
+	font-size: 16px;
+	padding: 6px 8px;
+}
+.socialicons a:hover {
+	color: #fdc750;
+}
+.socialicons .socials-text {
+	height: 10px;
+	padding: 9px;
 }
 
 h3.main-heading
@@ -71,43 +93,6 @@ h3.main-heading::after
 	left: 0;
 	position: absolute;
 	width: 40px;
-}
-.socialicons
-{
-	float: right;
-	margin-top: 18px;
-}
-.socialicons li
-{
-	display: inline;
-	float: left;
-	margin: 0;
-	margin-right: 2px;
-	padding: 0;
-}
-.socialicons li a
-{
-	background-color: #222;
-	color: #FFF;
-	display: block;
-	font-family: 'icomoon';
-	font-size: 16px;
-	padding: 6px 8px;
-}
-.socialicons li a:hover
-{
-	color: #fdc750;
-}
-.social-icons li:last-child
-{
-	margin-right: 0;
-}
-.socialicons .socials-text
-{
-	background-color: #222;
-	color: #FFF;
-	height: 10px;
-	padding: 9px;
 }
 
 
@@ -962,12 +947,6 @@ div.footer .copyright
 	webkit-transition-property: -webkit-transform, opacity;
 }
 
-@media (hover: hover) {
-	.tabs li > a {
-		top: 0px;
-	}
-}
-
 @media screen and (min-width: 768px) and (max-width: 959px)
 {
 	#container
@@ -1139,8 +1118,7 @@ div.footer .copyright
 /**
  * Styles for small screens (below 480px wide)
  */
-@media screen and (max-width: 479px)
-{
+@media screen and (max-width: 479px) {
 	#container {
 		margin-top: 10px;
 		width: 300px;
