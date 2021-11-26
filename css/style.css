@@ -214,8 +214,15 @@ h3.main-heading::after
 	position: relative;
 	top: 0;
 }
-.tabs li > a:hover {
-	top: -10px;
+/** 
+ * only apply hover style on devices with hover capabilities
+ * to prevent sticky hover state:
+ * https://stackoverflow.com/a/28058919/9698467
+ */
+@media (hover:hover) {
+	.tabs li > a:hover {
+		top: -10px;
+	}
 }
 .tabs li.active {
 	margin-top: -14px;
@@ -953,6 +960,12 @@ div.footer .copyright
 	moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
 	webkit-transition-property: -webkit-transform, opacity;
+}
+
+@media (hover: hover) {
+	.tabs li > a {
+		top: 0px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 959px)
