@@ -71,6 +71,37 @@ header {
 	padding: 9px;
 }
 
+#profile {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background: #fdc750 url(../images/header-shadow.png) no-repeat bottom;
+	padding: 42px 20px;
+}
+.about .photo-inner {
+	background: url(../images/photo-inner.png) no-repeat;
+	float: left;
+	padding: 0 20px;
+}
+.about h1 {
+	color: #FFF;
+	font-weight: 900;
+	line-height: 34px;
+}
+.about h3 {
+	color: #FFF;
+	font-size: 18px;
+	margin-top: 8px;
+}
+.about p {
+	color: #a87f09;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-top: 15px;
+}
+
 h3.main-heading
 {
 	border-bottom: 1px solid #ebebeb;
@@ -95,66 +126,9 @@ h3.main-heading::after
 	width: 40px;
 }
 
-
-#profile {
-	display: flex;
-	flex-flow: row wrap;
-	background: #fdc750;
-	background-image: url(../images/header-shadow.png);
-	background-position: center bottom;
-	background-repeat: repeat-x;
-	overflow: hidden;
-}
-.about
-{
-	float: left;
-	margin-left: 20px;
-	margin-top: 30px;
-	width: 490px;
-}
-.about .photo-inner
-{
-	background: url(../images/photo-inner.png) no-repeat;
-	float: left;
-	height: 212px;
-	padding: 12px 0 0 20px;
-	width: 192px;
-}
-.about .photo-inner img
-{
-	background-color: #FFF;
-}
-.about h1
-{
-	color: #FFF;
-	font-weight: 900;
-	line-height: 34px;
-	margin-top: 8px;
-}
-.about h3
-{
-	color: #FFF;
-	font-size: 18px;
-	line-height: 18px;
-	margin-top: 5px;
-}
-.about p
-{
-	color: #a87f09;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 20px;
-	margin-top: 15px;
-}
-.personal-info
-{
-	background: url(../images/personal-info-sep.png) no-repeat left top;
-	float: left;
-	margin-left: 10px;
-	margin-top: 30px;
-	min-height: 230px;
-	padding: 20px 0 0 20px;
-	width: 310px;
+.personal-info {
+	background: url(../images/personal-info-sep.png) no-repeat left;
+	padding-left: 20px;
 }
 .personal-info li
 {
