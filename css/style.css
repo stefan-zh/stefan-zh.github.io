@@ -21,6 +21,24 @@ h5 {
 	font-size: 13px;
 }
 
+h3.main-heading {
+	border-bottom: 1px solid #ebebeb;
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	padding-bottom: 14px;
+	position: relative;
+}
+h3.main-heading::after {
+	background: #fdc750;
+	bottom: -1px;
+	content: '';
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 40px;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -194,75 +212,65 @@ header {
 #resume .button:hover {
 	background-color: #fdc750;
 }
+
 .timeline-section {
+	display: flex;
+	flex-direction: column;
 	width: 490px;
 }
-h3.main-heading {
-	border-bottom: 1px solid #ebebeb;
-	color: #333;
-	font-size: 16px;
-	font-weight: 600;
+.timeline-section > * {
 	margin-bottom: 20px;
-	padding-bottom: 14px;
-	position: relative;
 }
-h3.main-heading::after {
-	background: #fdc750;
-	bottom: -1px;
-	content: '';
-	height: 1px;
-	left: 0;
-	position: absolute;
-	width: 40px;
+.timeline {
+	display: flex;
+	flex-direction: column;
 }
+/* .timeline li {
+	margin-bottom: 20px;
+}
+.timeline li .left
+{
+   width:470px;
+   float: left;
+   padding-right:64px;
+}
+.timeline li .right
+{
+   float:left;
+   width:270px;
+} */
+
+.timeline-unit {
+	border-left: 1px solid #fdc750;
+	line-height: 17px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+}
+.timeline-unit h4 {
+	color: #444;
+	line-height: 24px;
+}
+.timeline-unit h5 {
+	color: #999;
+	line-height: 18px;
+}
+.timeline-unit p {
+	color: #666;
+	margin-top: 5px;
+}
+.timeline-unit .title {
+	display: flex;
+	justify-content: space-between;
+}
+.timeline-unit .timeline-date {
+	color: #fdc750;
+	font-size: 14px;
+	padding: 2px 6px;
+}
+
 .skills-section
 {
 	float: left;
-}
-.timeline
-{
-	margin-bottom: 30px;
-}
-.timeline li
-{
-	margin-bottom: 20px;
-}
-.timeline li .timelineUnit
-{
-	border-left: 1px solid #fdc750;
-	color: #444;
-	font-size: 13px;
-	line-height: 17px;
-	margin-left: 0px;
-	padding-left: 15px;
-}
-.timeline li .timelineUnit .timelineDate
-{
-	color: #fdc750;
-	float: right;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 17px;
-	margin-left: 10px;
-	padding: 2px 6px;
-}
-.timeline li .timelineUnit h4
-{
-	color: #444;
-	font-size: 15px;
-	line-height: 24px;
-}
-.timeline li .timelineUnit h5
-{
-	color: #999;
-	font-size: 13px;
-	line-height: 18px;
-}
-.timeline li .timelineUnit p
-{
-	color: #666;
-	font-size: 12px;
-	margin-top: 5px;
 }
 .skills-section
 {
@@ -438,26 +446,6 @@ h3.main-heading::after {
    float:left;
 }
 .right-heading
-{
-   float:left;
-   width:270px;
-}
-.timeline
-{
-   float: left;
-	margin-bottom: 30px;
-}
-.timeline li
-{
-   float: left;
-}
-.timeline li .left
-{
-   width:470px;
-   float: left;
-   padding-right:64px;
-}
-.timeline li .right
 {
    float:left;
    width:270px;
