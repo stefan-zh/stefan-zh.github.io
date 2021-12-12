@@ -102,6 +102,27 @@ header {
 	margin-top: 15px;
 }
 
+.personal-info {
+	background: url(../images/personal-info-sep.png) no-repeat left;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	padding-left: 20px;
+}
+.personal-info > * {
+	font-size: 14px;
+	color: #a87f09;
+}
+.personal-info label {
+	flex: 0 0 33.3%;
+	font-weight: 600;
+	padding: 4px 0 14px 7px;
+}
+.personal-info span {
+	font-weight: 300;
+	padding: 4px 0 14px;
+}
+
 h3.main-heading
 {
 	border-bottom: 1px solid #ebebeb;
@@ -124,31 +145,6 @@ h3.main-heading::after
 	left: 0;
 	position: absolute;
 	width: 40px;
-}
-
-.personal-info {
-	background: url(../images/personal-info-sep.png) no-repeat left;
-	padding-left: 20px;
-}
-.personal-info li
-{
-	font-size: 14px;
-	margin-bottom: 10px;
-	overflow: hidden;
-}
-.personal-info li label {
-	border-radius: 3px;
-	color: #a87f09;
-	float: left;
-	font-weight: 600;
-	padding: 4px 7px;
-}
-.personal-info li span {
-	color: #a87f09;
-	float: right;
-	font-weight: 300;
-	padding-top: 4px;
-	width: 210px;
 }
 
 .menu {
