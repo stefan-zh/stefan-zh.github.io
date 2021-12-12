@@ -123,30 +123,6 @@ header {
 	padding: 4px 0 14px;
 }
 
-h3.main-heading
-{
-	border-bottom: 1px solid #ebebeb;
-	clear: both;
-	color: #333;
-	display: block;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 16px;
-	margin: 0px 2px 20px 0px;
-	padding-bottom: 14px;
-	position: relative;
-}
-h3.main-heading::after
-{
-	background: #fdc750;
-	bottom: -1px;
-	content: '';
-	height: 1px;
-	left: 0;
-	position: absolute;
-	width: 40px;
-}
-
 .menu {
 	background-color: #ededed;
 }
@@ -156,7 +132,7 @@ h3.main-heading::after
 	justify-content: center;
 }
 .tabs li {
-	padding: 20px 0;
+	padding: 17px 0;
 }
 .tabs li > a {
 	color: #b9b9b9;
@@ -175,12 +151,12 @@ h3.main-heading::after
  * https://stackoverflow.com/a/28058919/9698467
  */
 @media (hover:hover) {
-	.tabs li > a:hover {
+	.tabs li:not(.active) > a:hover {
 		top: -10px;
 	}
 }
 .tabs li.active {
-	margin-top: -14px;
+	margin-top: -11px;
 	background: url('../images/tab-hover.png') no-repeat;
 }
 .tabs li.active a {
@@ -193,20 +169,55 @@ h3.main-heading::after
 	margin-bottom: 5px;
 }
 
-
-#resume
-{
-	overflow: hidden;
-	padding: 40px 20px;
+#resume {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
 }
-.skills-section, .timeline-section
+#resume .download-resume {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 15px;
+}
+#resume .button {
+	background-color: #8c8c8c;
+	border-radius: 0 4px 4px 0;
+	color: #f7f7f7;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	margin-left: -20px;
+	text-align: center;
+	width: 250px;
+}
+#resume .button:hover {
+	background-color: #fdc750;
+}
+.timeline-section {
+	width: 490px;
+}
+h3.main-heading {
+	border-bottom: 1px solid #ebebeb;
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	padding-bottom: 14px;
+	position: relative;
+}
+h3.main-heading::after {
+	background: #fdc750;
+	bottom: -1px;
+	content: '';
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 40px;
+}
+.skills-section
 {
 	float: left;
-}
-.timeline-section
-{
-	padding-right: 60px;
-	width: 490px;
 }
 .timeline
 {
@@ -286,27 +297,6 @@ h3.main-heading::after
 	height: 12px;
 	opacity: 0.3;
 	width: 12px;
-}
-#resume .button
-{
-	background-color: #8c8c8c;
-	border-radius: 0 4px 4px 0;
-	color: #f7f7f7;
-	display: block;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 20px;
-	margin: -15px 0 10px -20px;
-	moz-border-radius: 0 4px 4px 0;
-	overflow: hidden;
-	padding: 10px;
-	text-align: center;
-	webkit-border-radius: 0 4px 4px 0;
-	width: 250px;
-}
-#resume .button:hover
-{
-	background-color: #fdc750;
 }
 
 
