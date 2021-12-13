@@ -268,40 +268,34 @@ header {
 	padding: 2px 6px;
 }
 
-.skills-section
-{
-	float: left;
+.skills-section {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 270px;
 }
-.skills-section
-{
-	width: 270px;
+.skills-section > * {
+	margin-bottom: 20px;
 }
-.skills
-{
-	margin-bottom: 25px;
-	overflow: hidden;
+.skills {
+	display: flex;
+	flex-direction: column;
 }
-.skills li
-{
-	float: left;
+.skill {
+	display: flex;
 	margin-bottom: 15px;
-	padding-left: 0px;
 }
-.skills li h4
-{
+.skill h4 {
 	color: #444;
-	float: left;
-	font-size: 15px;
 	width: 140px;
 }
-.skills li .rating {
+.skill .rating {
 	display: flex;
-	width: 123px;
+	flex-grow: 1;
+	justify-content: space-evenly;
 }
-.skills li .rating > span {
+.skill .rating span {
 	background-color: #757575;
 	border-radius: 10px;
-	margin: 0 2.5px;
 	height: 12px;
 	opacity: 0.3;
 	width: 12px;

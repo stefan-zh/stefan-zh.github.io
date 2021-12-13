@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
 	/* ---------------------------------------------------------------------- */
 
 	// Rating bars
-	$(".skills li .rating").each((_, e) => {
+	$(".skills .rating").each((_, e) => {
 		let rat = $(e).attr("data-rat");		
 		// Append points
 		for (let i = 0; i < 7; i++) {
