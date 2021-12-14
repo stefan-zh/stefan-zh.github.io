@@ -6,10 +6,10 @@ jQuery(document).ready(function () {
 
 	// Rating bars
 	$(".skills .rating").each((_, e) => {
-		let rat = $(e).attr("data-rat");		
+		const rat = $(e).attr("data-rat");		
 		// Append points
 		for (let i = 0; i < 7; i++) {
-			let point = $("<span />");
+			const point = $("<span />");
 			if (i < rat) {
 				$(point).css({opacity: 1});
 			}
@@ -21,11 +21,8 @@ jQuery(document).ready(function () {
 	/*	Menu
 	/* ---------------------------------------------------------------------- */
 
-	// Needed variables
-	var $content = $("#content");
-
 	// Run easytabs
-	$content.easytabs({
+	$("#content").easytabs({
 		animate: true,
 		updateHash: false,
 		transitionIn: 'slideDown',
@@ -40,8 +37,8 @@ jQuery(document).ready(function () {
 	/* ---------------------------------------------------------------------- */
 
 	// Needed variables
-	var $plist = $('#projects-list');
-	var $pfilter = $('#projects-filter');
+	const $pfilter = $('#projects-filter');
+	const $plist = $('#projects-list');
 
 	// Deselect current and select new current
 	$pfilter.find('a').click(function () {
@@ -61,7 +58,7 @@ jQuery(document).ready(function () {
 
 	// Isotope Filter 
 	$pfilter.find('a').click(function () {
-		var selector = $(this).attr('data-filter');
+		const selector = $(this).attr('data-filter');
 		$plist.isotope({
 			filter: selector,
 			animationOptions: {
