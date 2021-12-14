@@ -307,6 +307,7 @@ header {
 }
 #projects-filter {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 7px;
 	border-bottom: 1px solid #ededed;
 	padding: 10px 0 25px;
