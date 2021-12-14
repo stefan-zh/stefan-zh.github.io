@@ -36,25 +36,18 @@ jQuery(document).ready(function () {
 	});
 
 	/* ---------------------------------------------------------------------- */
-	/*	Cats Filter
-	/* ---------------------------------------------------------------------- */
-
-	var $catsfilter = $('.cats-filter');
-
-	// Copy categories to item classes
-	$catsfilter.find('a').click(function () {
-		var currentOption = $(this).attr('data-filter');
-		$(this).parent().parent().find('a').removeClass('current');
-		$(this).addClass('current');
-	});
-
-	/* ---------------------------------------------------------------------- */
 	/*	Portfolio
 	/* ---------------------------------------------------------------------- */
 
 	// Needed variables
 	var $plist = $('#projects-list');
 	var $pfilter = $('#projects-filter');
+
+	// Deselect current and select new current
+	$pfilter.find('a').click(function () {
+		$(this).parent().find('.current').removeClass('current');
+		$(this).addClass('current');
+	});
 
 	// Run Isotope  
 	$plist.isotope({

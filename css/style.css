@@ -302,10 +302,27 @@ header {
 }
 
 
-#projects
-{
-	padding: 20px 20px 20px 20px;
+#projects {
+	padding: 20px;
 }
+#projects-filter {
+	display: flex;
+	gap: 7px;
+	border-bottom: 1px solid #ededed;
+	padding: 10px 0 25px;
+}
+#projects-filter a {
+	background-color: #666;
+	color: #fff;
+	padding: 6px;
+}
+#projects-filter a:hover {
+	background-color: #fdc750;
+}
+#projects-filter a.current {
+	background-color: #fdc750;
+}
+
 #projects-list
 {
 	overflow: hidden;
@@ -353,29 +370,7 @@ header {
 	font-size: 11px;
 	line-height: 25px;
 }
-.cats-filter
-{
-	border-bottom: 1px solid #ededed;
-	overflow: hidden;
-	padding: 10px 0 20px;
-}
-.cats-filter li a
-{
-	background-color: #666;
-	color: #fff;
-	float: left;
-	margin-bottom: 5px;
-	margin-right: 7px;
-	padding: 6px;
-}
-.cats-filter li a:hover
-{
-	background-color: #fdc750;
-}
-.cats-filter li a.current
-{
-	background-color: #fdc750;
-}
+
 .adipoli-wrapper
 {
 	display: inline-block;
