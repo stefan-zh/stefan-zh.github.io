@@ -286,12 +286,12 @@ header {
 }
 .skill h4 {
 	color: #444;
-	width: 140px;
+	flex-grow: 1;
 }
 .skill .rating {
 	display: flex;
-	flex-grow: 1;
-	justify-content: space-evenly;
+	flex: 0 0 123px;
+	justify-content: space-between;
 }
 .skill .rating span {
 	background-color: #757575;
