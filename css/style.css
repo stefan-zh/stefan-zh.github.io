@@ -249,6 +249,7 @@ header {
 .timeline-unit h4 {
 	color: #444;
 	line-height: 24px;
+	flex: 1 0 120px;
 }
 .timeline-unit h5 {
 	color: #999;
@@ -271,7 +272,7 @@ header {
 .skills-section {
 	display: flex;
 	flex-direction: column;
-	flex: 0 0 270px;
+	flex: 0 1 270px;
 }
 .skills-section > * {
 	margin-bottom: 20px;
