@@ -48,6 +48,7 @@ jQuery(document).ready(function () {
 
 	// Run Isotope  
 	$plist.isotope({
+		itemSelector: '.project',
 		filter: '*',
 		layoutMode: 'masonry',
 		animationOptions: {

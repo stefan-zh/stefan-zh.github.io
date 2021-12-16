@@ -302,7 +302,6 @@ header {
 	width: 12px;
 }
 
-
 #projects {
 	padding: 20px;
 }
@@ -325,49 +324,38 @@ header {
 	background-color: #fdc750;
 }
 
-#projects-list
-{
-	overflow: hidden;
+#projects-list {
 	width: 820px;
 }
-#projects-list .description{
-   display:none;
-}
-#projects-list li
-{
+.project {
 	background-color: #fbfbfb;
 	border-bottom: 1px solid #e5e5e5;
-	float: left;
 	height: 185px;
 	margin-bottom: 30px;
 	margin-right: 25px;
 	text-align: center;
 	width: 180px;
 }
-#projects-list li:hover
-{
+.project:hover {
 	border-bottom: 1px solid #fdc750;
-	height: 185px;
 }
-#projects-list img
-{
-	background-color: #FFF;
+.project:hover .title {
+	color: #fdc750;
+}
+.project img {
 	height: 120px;
 	width: 180px;
 }
-#projects-list li:hover .title
-{
-	color: #fdc750;
-}
-#projects-list li .title
-{
+.project .title {
 	color: #3A3A3A;
 	font-size: 14px;
 	font-weight: 400;
 	margin-top: 15px;
 }
-#projects-list li .categorie
-{
+.project .description{
+	display: none;
+}
+.project .categorie {
 	color: #999;
 	font-size: 11px;
 	line-height: 25px;
