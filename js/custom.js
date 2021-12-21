@@ -89,5 +89,17 @@ jQuery(document).ready(function () {
 		theme: 'pp_default',
 		horizontal_padding: 5,
 	});
+
+	/* ---------------------------------------------------------------------- */
+	/*	Fancybox https://fancyapps.com/docs/ui/fancybox/
+	/* ---------------------------------------------------------------------- */
+
+	// attach Fancybox to the list of projects
+	Fancybox.bind("#projects-list a", {
+		// Your options
+		caption: function (fancybox, carousel, slide) {
+			return $("#"+slide.caption).html().trim();
+		},
+	});
 	
 });
