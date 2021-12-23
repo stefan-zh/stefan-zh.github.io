@@ -98,7 +98,9 @@ jQuery(document).ready(function () {
 	Fancybox.bind("#projects-list a", {
 		// Your options
 		caption: function (fancybox, carousel, slide) {
-			return $("#"+slide.caption).html().trim();
+			if (slide.caption) {
+				return $("#"+slide.caption).html().trim();
+			}
 		},
 	});
 	
