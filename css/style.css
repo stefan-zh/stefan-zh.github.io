@@ -69,6 +69,7 @@ header {
 .description {
 	color: #b9b9b9;
 	font-size: 13px;
+	text-align: center;
 }
 .description a {
 	color: #fdc750;
