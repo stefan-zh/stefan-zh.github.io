@@ -66,6 +66,13 @@ header {
 .transition {
 	transition: all .5s ease;
 }
+.description {
+	color: #b9b9b9;
+	font-size: 13px;
+}
+.description a {
+	color: #fdc750;
+}
 
 .socialicons {
 	display: flex;
