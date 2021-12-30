@@ -74,6 +74,9 @@ header {
 .description a {
 	color: #fdc750;
 }
+.description a i {
+	font-family: 'icomoon';
+}
 
 .socialicons {
 	display: flex;
@@ -359,9 +362,6 @@ header {
 	font-size: 14px;
 	font-weight: 400;
 	margin-top: 15px;
-}
-.project .description{
-	display: none;
 }
 .project .category {
 	color: #999;
