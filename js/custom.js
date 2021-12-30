@@ -80,17 +80,6 @@ jQuery(document).ready(function () {
 	});
 
 	/* ---------------------------------------------------------------------- */
-	/*	prettyPhoto
-	/* ---------------------------------------------------------------------- */
-
-	$("a[rel^='projects']").prettyPhoto({
-		animation_speed: 'fast', /* fast/slow/normal */
-		social_tools: '',
-		theme: 'pp_default',
-		horizontal_padding: 5,
-	});
-
-	/* ---------------------------------------------------------------------- */
 	/*	Fancybox https://fancyapps.com/docs/ui/fancybox/
 	/* ---------------------------------------------------------------------- */
 
