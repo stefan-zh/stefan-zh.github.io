@@ -92,5 +92,11 @@ jQuery(document).ready(function () {
 			}
 		},
 	});
-	
+
+	/* ---------------------------------------------------------------------- */
+	/*	Footer
+	/* ---------------------------------------------------------------------- */
+
+	// set the year
+	document.getElementById("year").innerHTML = (new Date().getFullYear());
 });
