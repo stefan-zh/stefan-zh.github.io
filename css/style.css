@@ -26,7 +26,7 @@ h3.main-heading {
 	color: #333;
 	font-size: 16px;
 	font-weight: 600;
-	padding-bottom: 14px;
+	padding: 14px 0;
 	position: relative;
 }
 h3.main-heading::after {
@@ -207,7 +207,6 @@ header {
 #resume .download-resume {
 	width: 100%;
 	padding: 10px 0;
-	margin-bottom: 15px;
 }
 #resume .button {
 	background-color: #8c8c8c;
@@ -227,35 +226,14 @@ header {
 .timeline-section {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 	width: 490px;
+	margin-bottom: 40px;
 }
-.timeline-section > * {
-	margin-bottom: 20px;
-}
-.timeline {
-	display: flex;
-	flex-direction: column;
-}
-/* .timeline li {
-	margin-bottom: 20px;
-}
-.timeline li .left
-{
-   width:470px;
-   float: left;
-   padding-right:64px;
-}
-.timeline li .right
-{
-   float:left;
-   width:270px;
-} */
-
 .timeline-unit {
 	border-left: 1px solid #fdc750;
 	line-height: 17px;
 	padding-left: 15px;
-	margin-bottom: 20px;
 }
 .timeline-unit h4 {
 	color: #444;
@@ -370,8 +348,7 @@ header {
 }
 
 #certificates {
-  overflow: hidden;
-  padding: 40px 20px;
+  padding: 20px;
 }
 #certificates .timeline {
 	float: none;
