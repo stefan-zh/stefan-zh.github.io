@@ -48,6 +48,10 @@ ol, ul {
 	list-style: none;
 }
 
+.page {
+	padding: 20px 20px 60px;
+}
+
 #container {
 	margin: 0 auto;
 	width: 860px;
@@ -202,7 +206,6 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 20px;
 }
 #resume .download-resume {
 	width: 100%;
@@ -228,7 +231,6 @@ header {
 	flex-direction: column;
 	gap: 20px;
 	width: 490px;
-	margin-bottom: 40px;
 }
 .timeline-unit {
 	border-left: 1px solid #fdc750;
@@ -238,7 +240,6 @@ header {
 .timeline-unit h4 {
 	color: #444;
 	line-height: 24px;
-	flex: 1 0 120px;
 }
 .timeline-unit h5 {
 	color: #999;
@@ -262,9 +263,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	flex: 0 1 270px;
-}
-.skills-section > * {
-	margin-bottom: 20px;
+	gap: 20px;
 }
 .skills {
 	display: flex;
@@ -348,15 +347,9 @@ header {
 }
 
 #certificates {
-  padding: 20px;
-}
-#certificates .timeline {
-	float: none;
-	margin-bottom: 30px;
-}
-#certificates .timeline li {
-	float: none;
-	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 #papers
