@@ -352,33 +352,32 @@ header {
 	gap: 20px;
 }
 
-#papers
-{
-	overflow: hidden;
-	padding: 40px 20px;
+#papers {
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+	grid-auto-rows: auto;
+	grid-gap: 20px;
 }
-.listings-section
-{
-   float: left;
+#papers .authors {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 }
-.left-heading
-{
-   width:490px;
-   padding-right:60px;
-   float:left;
+#papers .author {
+	display: flex;
+	justify-content: flex-start;
+	color: #333;
+	gap: 10px;
 }
-.right-heading
-{
-   float:left;
-   width:270px;
+#papers .author a:hover {
+	color: #fdc750;
 }
-.intouch
-{
-   float:left;
-   position:relative;
-   word-spacing:7px;
-   font-size:16px;
+#papers .author i {
+	display: inline;
+	font-family: 'icomoon';
+	font-size: 14px;
 }
+
 
 #blog
 {
