@@ -355,7 +355,6 @@ header {
 #papers {
 	display: grid;
 	grid-template-columns: 5fr 2fr;
-	grid-auto-rows: auto;
 	grid-gap: 20px;
 }
 #papers .authors {
@@ -365,7 +364,6 @@ header {
 }
 #papers .author {
 	display: flex;
-	justify-content: flex-start;
 	color: #333;
 	gap: 10px;
 }
@@ -373,9 +371,8 @@ header {
 	color: #fdc750;
 }
 #papers .author i {
-	display: inline;
 	font-family: 'icomoon';
-	font-size: 14px;
+	font-size: 15px;
 }
 
 
