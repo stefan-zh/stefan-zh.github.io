@@ -482,7 +482,7 @@ footer {
  */
 @media screen and (max-width: 499px) {
 	#container {
-		width: 300px;
+		width: 320px;
 	}
 	header {
 		margin: 0;
