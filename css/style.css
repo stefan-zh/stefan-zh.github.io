@@ -159,22 +159,18 @@ footer {
 
 .info {
 	background: url(../images/personal-info-sep.png) no-repeat left;
-	display: flex;
-	flex-wrap: wrap;
-	padding-left: 20px;
-}
-.info > * {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	row-gap: 1.4em;
 	font-size: 14px;
 	color: #a87f09;
+	padding-left: 30px;
 }
 .info label {
-	flex: 0 0 33.3%;
 	font-weight: 600;
-	padding: 4px 0 14px 7px;
 }
 .info span {
 	font-weight: 300;
-	padding: 4px 0 14px;
 }
 
 .menu {
