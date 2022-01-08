@@ -243,7 +243,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 490px;
+	width: 540px;
 }
 .timeline-unit {
 	border-left: 1px solid #fdc750;
@@ -275,19 +275,20 @@ footer {
 .skills-section {
 	display: flex;
 	flex-direction: column;
-	flex: 0 1 270px;
+	flex: 0 1 240px;
 	gap: 20px;
 }
 .skills {
 	display: flex;
 	flex-direction: column;
+	gap: 15px;
 }
 .skill {
 	display: flex;
-	margin-bottom: 15px;
 }
 .skill h4 {
 	color: #444;
+	font-size: 14px;
 	flex-grow: 1;
 }
 .skill .rating {
@@ -388,10 +389,8 @@ footer {
 	font-size: 15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 959px)
-{
-	#container
-	{
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#container {
 		width: 750px;
 	}
 	.about
@@ -417,48 +416,12 @@ footer {
 	{
 		width: 190px;
 	}
-	.timeline-section
-	{
-		padding-right: 30px;
-		width: 380px;
+	.timeline-section {
+		width: 430px;
 	}
-	.skills-section
-	{
-		width: 300px;
-	}
-	#projects-list
-	{
-		width: 750px;
-	}
-	#projects-list li
-	{
+	/* acts as a buffer to prevent overflow of projects outside the container */
+	#projects-list li {
 		margin-right: 60px;
-	}
-	.blog-content-wrapper
-	{
-		width: 420px;
-	}
-	.blog-entry img
-	{
-		width: 420px;
-	}
-	.comment .comment-meta,.comment .comment-body
-	{
-		float: left;
-		margin-left: 10px;
-		width: 330px;
-	}
-	.comment-child .comment-meta,.comment-child .comment-body
-	{
-		width: 310px !important;
-	}
-	.contact-info
-	{
-		width: 250px;
-	}
-	.contact-form
-	{
-		width: 420px;
 	}
 }
 
