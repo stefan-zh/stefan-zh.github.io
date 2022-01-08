@@ -124,16 +124,20 @@ footer {
 
 #profile {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
 	background: #fdc750 url(../images/header-shadow.png) no-repeat bottom;
 	padding: 42px 20px;
 }
-.about .photo-inner {
+#profile .photo-inner {
 	background: url(../images/photo-inner.png) no-repeat;
 	float: left;
-	padding: 0 20px;
+	padding: 0 25px 0 20px;
+}
+.personal {
+	display: flex;
+}
+.about {
+	flex: 0 0 310px;
 }
 .about h1 {
 	color: #FFF;
@@ -153,23 +157,22 @@ footer {
 	margin-top: 15px;
 }
 
-.personal-info {
+.info {
 	background: url(../images/personal-info-sep.png) no-repeat left;
 	display: flex;
 	flex-wrap: wrap;
-	width: 300px;
 	padding-left: 20px;
 }
-.personal-info > * {
+.info > * {
 	font-size: 14px;
 	color: #a87f09;
 }
-.personal-info label {
+.info label {
 	flex: 0 0 33.3%;
 	font-weight: 600;
 	padding: 4px 0 14px 7px;
 }
-.personal-info span {
+.info span {
 	font-weight: 300;
 	padding: 4px 0 14px;
 }
