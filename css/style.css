@@ -137,7 +137,7 @@ footer {
 	display: flex;
 }
 .about {
-	flex: 0 0 310px;
+	flex: 0 0 300px;
 }
 .about h1 {
 	color: #FFF;
@@ -160,7 +160,7 @@ footer {
 .info {
 	background: url(../images/personal-info-sep.png) no-repeat left;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 100px auto;
 	row-gap: 1.4em;
 	font-size: 14px;
 	color: #a87f09;
@@ -388,32 +388,31 @@ footer {
 	font-size: 15px;
 }
 
+
+/**
+ * Styles for medium size screens (768px to 959px)
+ */
 @media screen and (min-width: 768px) and (max-width: 959px) {
 	#container {
 		width: 750px;
 	}
-	.about
-	{
-		width: 410px;
+	#profile .photo-inner {
+		padding: 0 35px 0 20px;
 	}
-	.about h1
-	{
+	.personal {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.about {
+		flex-basis: 0;
+	}
+	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
 	}
-	.about h3
-	{
-		font-size: 14px;
-		line-height: 14px;
-	}
-	.personal-info
-	{
-		margin-right: 10px;
-		width: 280px;
-	}
-	.personal-info li span
-	{
-		width: 190px;
+	.info {
+		background: none;
+		padding: 0;
 	}
 	.timeline-section {
 		width: 430px;
