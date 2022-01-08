@@ -425,9 +425,9 @@ footer {
 
 
 /**
- * Styles for small screens (480px to 767px)
+ * Styles for small screens (500px to 767px)
  */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 500px) and (max-width: 767px) {
 	#container {
 		width: 470px;
 	}
@@ -476,69 +476,57 @@ footer {
 	}
 }
 
+
 /**
- * Styles for small screens (below 480px wide)
+ * Styles for extra small screens (below 499px wide)
  */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 499px) {
 	#container {
-		margin-top: 10px;
 		width: 300px;
 	}
 	header {
-		height: 20px;
+		margin: 0;
 	}
 	.socialicons {
 		display: none;
 	}
+	#profile {
+		flex-direction: column;
+	}
+	#profile .photo-inner {
+		padding: 0 20px;
+	}
+	.personal {
+		flex-direction: column;
+	}
 	.about {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 5px;
+		flex-basis: 0;
 		text-align: center;
-		margin: 30px 0 10px 0;
-		width: 100%;
-	}
-	.about > * {
-		flex: 1 100%;
-	}
-	.about .photo-inner {
-		background: url(../images/photo-inner.png) no-repeat center;
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin-top: 10px;
 	}
 	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
-		margin: 0;
 	}
-	.personal-info {
+	.info {
 		background: none;
-		margin: 10px;
-		min-height: 200px;
-		padding: 0;
-		width: 100%;
-	}
-	.personal-info li {
-		font-size: 13px;
-	}
-	.personal-info li span {
-		width: 190px;
+		margin-top: 20px;
+		padding: 10px;
 	}
 	.tabs li.active {
 		margin-top: 0;
 		background-image: none;
 	}
+	#resume {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
 	.timeline-section {
-		padding: 0;
 		width: 100%;
 	}
 	.skills-section {
-		width: 100%;
-	}
-	.skills li h4 {
-		width: 120px;
+		margin-top: 20px;
 	}
 	#projects-list {
 		width: 100%;
@@ -546,7 +534,19 @@ footer {
 	#projects-list li {
 		margin-left: 40px;
 	}
+	#papers {
+		display: flex;
+		flex-direction: column;
+	}
+	#papers .auth-title {
+		display: none;
+	}
+	#papers .authors {
+		border-left: 1px solid #fdc750;
+		padding-left: 15px;
+	}
 }
+
 
 /**
  * On screens where the pixel density is 2 times higher, use a larger tab image
