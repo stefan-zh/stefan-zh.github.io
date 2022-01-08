@@ -417,103 +417,62 @@ footer {
 	.timeline-section {
 		width: 430px;
 	}
-	/* acts as a buffer to prevent overflow of projects outside the container */
+	/* somehow acts as a spacer to allow 3 projects to fit on a row */
 	#projects-list li {
 		margin-right: 60px;
 	}
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{
-	#container
-	{
+
+/**
+ * Styles for small screens (480px to 767px)
+ */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	#container {
 		width: 470px;
 	}
-	.socialicons
-	{
-		margin-top: 9px;
+	.socials-text {
+		display: none;
 	}
-	.socials-text
-	{
-		display: none !important;
+	.personal {
+		flex-direction: column;
+		gap: 30px;
 	}
-	.about
-	{
-		display: block;
-		width: 420px;
+	.about {
+		flex-basis: 0;
 	}
-	.about h1
-	{
+	.about h1 {
 		font-size: 30px;
 		line-height: 38px;
 	}
-	.about h3
-	{
-		font-size: 14px;
-		line-height: 14px;
-	}
-	.personal-info
-	{
+	.info {
 		background: none;
-		border-top: 1px solid #fdc750;
-		display: block;
-		margin-top: 0;
-		width: 420px;
+		padding: 0;
 	}
-	.personal-info li span
-	{
-		width: 280px;
+	#resume {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
 	}
-	.skills-section
-	{
-		width: 420px;
+	.timeline-section {
+		width: 100%;
 	}
-	.skills li h4
-	{
-		width: 260px;
-	}
-	.timeline-section
-	{
-		padding-right: 60px;
-		width: 420px;
-	}
-	#projects-list
-	{
-		width: 450px;
-	}
-	#projects-list li
-	{
-		margin-right: 40px;
-	}
-	.blog-content-wrapper
-	{
-		width: 430px;
-	}
-	.blog-entry img
-	{
-		width: 430px;
-	}
-	.blog-sidebar
-	{
-		margin-left: 0px;
-		width: 430px;
-	}
-	.comment .comment-meta,.comment .comment-body
-	{
-		width: 350px;
-	}
-	.comment-child .comment-meta,.comment-child .comment-body
-	{
-		width: 320px !important;
-	}
-	.contact-info
-	{
-		width: 420px;
-	}
-	.contact-form
-	{
+	.skills-section {
 		margin-top: 20px;
-		width: 420px;
+	}
+	#projects-list {
+		width: 430px;
+	}
+	#papers {
+		display: flex;
+		flex-direction: column;
+	}
+	#papers .auth-title {
+		display: none;
+	}
+	#papers .authors {
+		border-left: 1px solid #fdc750;
+		padding-left: 15px;
 	}
 }
 
