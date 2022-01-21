@@ -129,9 +129,9 @@ footer {
 	padding: 42px 20px;
 }
 #profile .photo-inner {
-	background: url(../images/photo-inner.png) no-repeat;
-	float: left;
-	padding: 0 25px 0 20px;
+	background: url(../images/photo-inner.png) no-repeat center;
+	padding: 12px 19px; /* this padding allows the photo frame to show */
+	margin-right: 5px;
 }
 .personal {
 	display: flex;
@@ -397,7 +397,7 @@ footer {
 		width: 750px;
 	}
 	#profile .photo-inner {
-		padding: 0 35px 0 20px;
+		margin-right: 15px;
 	}
 	.personal {
 		flex-direction: column;
@@ -494,7 +494,7 @@ footer {
 		flex-direction: column;
 	}
 	#profile .photo-inner {
-		padding: 0 20px;
+		margin: 0;
 	}
 	.personal {
 		flex-direction: column;
@@ -502,7 +502,6 @@ footer {
 	.about {
 		flex-basis: 0;
 		text-align: center;
-		margin-top: 10px;
 	}
 	.about h1 {
 		font-size: 30px;
