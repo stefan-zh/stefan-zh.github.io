@@ -245,7 +245,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 540px;
+	width: calc(100% - 270px);
 }
 .timeline-unit {
 	border-left: 1px solid #fdc750;
@@ -393,17 +393,17 @@ footer {
 
 
 /**
- * Styles for medium size screens (671px to 959px)
+ * Styles for medium size screens (671px to 989px)
  */
-@media screen and (min-width: 671px) and (max-width: 959px) {
+@media screen and (min-width: 671px) and (max-width: 989px) {
 	#container {
 		width: 90%;
 	}
 	#profile {
-		padding: 42px 28px;
+		padding: 42px 22px;
 	}
 	#profile .photo-inner {
-		margin-right: 15px;
+		margin-right: 20px;
 	}
 	.personal {
 		flex-direction: column;
@@ -419,9 +419,6 @@ footer {
 	.info {
 		background: none;
 		padding: 0;
-	}
-	.timeline-section {
-		width: 430px;
 	}
 	/* somehow acts as a spacer to allow 3 projects to fit on a row */
 	#projects-list li {
