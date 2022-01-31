@@ -67,7 +67,7 @@ ol, ul {
 
 #container {
 	margin: 0 auto;
-	width: 860px;
+	width: 920px;
 }
 header {
 	padding: 10px 0;
@@ -76,6 +76,8 @@ header {
 #content {
 	background-color: #FFF;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	border-radius: 15px;
+	overflow: hidden;
 }
 footer {
 	color: #333;
@@ -126,12 +128,12 @@ footer {
 	display: flex;
 	align-items: center;
 	background: #fdc750 url(../images/header-shadow.png) no-repeat bottom;
-	padding: 42px 20px;
+	padding: 42px 40px;
 }
 #profile .photo-inner {
 	background: url(../images/photo-inner.png) no-repeat center;
 	padding: 12px 19px; /* this padding allows the photo frame to show */
-	margin-right: 5px;
+	margin-right: 15px;
 }
 .personal {
 	display: flex;
@@ -165,6 +167,7 @@ footer {
 	font-size: 14px;
 	color: #a87f09;
 	padding-left: 30px;
+	flex-grow: 1;
 }
 .info label {
 	font-weight: 600;
@@ -390,11 +393,14 @@ footer {
 
 
 /**
- * Styles for medium size screens (768px to 959px)
+ * Styles for medium size screens (671px to 959px)
  */
-@media screen and (min-width: 768px) and (max-width: 959px) {
+@media screen and (min-width: 671px) and (max-width: 959px) {
 	#container {
-		width: 750px;
+		width: 90%;
+	}
+	#profile {
+		padding: 42px 28px;
 	}
 	#profile .photo-inner {
 		margin-right: 15px;
@@ -425,64 +431,12 @@ footer {
 
 
 /**
- * Styles for small screens (500px to 767px)
+ * Styles for extra small screens (below 670px wide)
  */
-@media screen and (min-width: 500px) and (max-width: 767px) {
+@media screen and (max-width: 670px) {
 	#container {
-		width: 470px;
-	}
-	.socials-text {
-		display: none;
-	}
-	.personal {
-		flex-direction: column;
-		gap: 30px;
-	}
-	.about {
-		flex-basis: 0;
-	}
-	.about h1 {
-		font-size: 30px;
-		line-height: 38px;
-	}
-	.info {
-		background: none;
-		padding: 0;
-	}
-	#resume {
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-	}
-	.timeline-section {
-		width: 100%;
-	}
-	.skills-section {
-		margin-top: 20px;
-	}
-	#projects-list {
-		width: 430px;
-	}
-	#papers {
-		display: flex;
-		flex-direction: column;
-	}
-	#papers .auth-title {
-		display: none;
-	}
-	#papers .authors {
-		border-left: 1px solid #fdc750;
-		padding-left: 15px;
-	}
-}
-
-
-/**
- * Styles for extra small screens (below 499px wide)
- */
-@media screen and (max-width: 499px) {
-	#container {
-		width: 320px;
+		width: 90%;
+		min-width: 320px;
 	}
 	header {
 		margin: 0;
@@ -498,6 +452,7 @@ footer {
 	}
 	.personal {
 		flex-direction: column;
+		align-items: center;
 	}
 	.about {
 		flex-basis: 0;
