@@ -3,6 +3,11 @@ body {
 	font-family: 'open Sans', Arial;
 	font-size: 12px;
 	line-height: 1;
+	/* Prevent font scaling in landscape while allowing user zoom */
+	/* https://stackoverflow.com/q/48423282/9698467 and https://stackoverflow.com/a/40892507/9698467 */
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 
 h1 {
