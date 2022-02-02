@@ -86,8 +86,7 @@ header {
 }
 footer {
 	color: #333;
-	margin-top: 20px;
-	padding-left: 6px;
+	margin: 20px 0 20px 6px;
 }
 .hidden {
 	display: none;
