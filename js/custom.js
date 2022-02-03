@@ -36,16 +36,6 @@ jQuery(document).ready(function () {
 	/*	Portfolio
 	/* ---------------------------------------------------------------------- */
 
-	// Needed variables
-	// const $pfilter = $('#projects-filter');
-	// const $plist = $('#projects-list');
-
-	// Deselect current and select new current
-	$('#projects-filter').find('button').click(function () {
-		$(this).parent().find('.current').removeClass('current');
-		$(this).addClass('current');
-	});
-
 	// Run MixItUp 3
 	// https://www.kunkalabs.com/mixitup/docs/get-started/
 	mixitup('#projects-list', {
@@ -57,30 +47,11 @@ jQuery(document).ready(function () {
 		}
 	});
 
-	// Run Isotope  
-	// $plist.isotope({
-	// 	itemSelector: '.project',
-	// 	filter: '*',
-	// 	layoutMode: 'masonry',
-	// 	animationOptions: {
-	// 		duration: 750,
-	// 		easing: 'linear'
-	// 	}
-	// });
-
-	// Isotope Filter 
-	// $pfilter.find('a').click(function () {
-	// 	const selector = $(this).attr('data-filter');
-	// 	$plist.isotope({
-	// 		filter: selector,
-	// 		animationOptions: {
-	// 			duration: 750,
-	// 			easing: 'linear',
-	// 			queue: false,
-	// 		}
-	// 	});
-	// 	return false;
-	// });
+	// Deselect current and select new current
+	$('#projects-filter').find('button').click(function () {
+		$(this).parent().find('.current').removeClass('current');
+		$(this).addClass('current');
+	});
 
 	// Portfolio image animation 
 	$('#projects-list').find('img').adipoli({
