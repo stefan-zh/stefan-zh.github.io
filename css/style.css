@@ -340,13 +340,12 @@ footer {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	gap: 20px;
 }
 .project {
 	background-color: #fbfbfb;
 	border-bottom: 1px solid #e5e5e5;
-	height: 185px;
-	margin-bottom: 30px;
-	margin-right: 25px;
+	margin-bottom: 10px;
 	text-align: center;
 	width: 180px;
 }
@@ -430,10 +429,6 @@ footer {
 		background: none;
 		padding: 0;
 	}
-	/* somehow acts as a spacer to allow 3 projects to fit on a row */
-	#projects-list li {
-		margin-right: 60px;
-	}
 }
 
 
@@ -488,12 +483,6 @@ footer {
 	}
 	.skills-section {
 		margin-top: 20px;
-	}
-	#projects-list {
-		width: 100%;
-	}
-	#projects-list li {
-		margin-left: 40px;
 	}
 	#papers {
 		display: flex;
