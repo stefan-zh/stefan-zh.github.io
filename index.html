@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/glyphs.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic"/>
     <script type="text/javascript" src="js/fancybox.umd.js"></script>
+    <script type="text/javascript" src="js/mixitup.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.adipoli.min.js"></script>
     <script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
@@ -268,19 +269,19 @@
             <!-- Projects -->
             <section id="projects">
                 <div id="projects-filter">
-                    <a href="" class="current transition" data-filter="*">All</a>
-                    <a href="" class="transition" data-filter=".mobile">Mobile</a>
-                    <a href="" class="transition" data-filter=".website">Web</a>
-                    <a href="" class="transition" data-filter=".coursep">Course Project</a>
-                    <a href="" class="transition" data-filter=".pennapps">PennApps</a>
-                    <a href="" class="transition" data-filter=".video">Video</a>
-                    <a href="" class="transition" data-filter=".hardware">Hardware</a>
-                    <a href="" class="transition" data-filter=".download">Download</a>
+                    <button type="button" class="current transition" data-filter="all">All</button>
+                    <button type="button" class="transition" data-filter=".mobile">Mobile</button>
+                    <button type="button" class="transition" data-filter=".website">Web</button>
+                    <button type="button" class="transition" data-filter=".coursep">Course Project</button>
+                    <button type="button" class="transition" data-filter=".pennapps">PennApps</button>
+                    <button type="button" class="transition" data-filter=".video">Video</button>
+                    <button type="button" class="transition" data-filter=".hardware">Hardware</button>
+                    <button type="button" class="transition" data-filter=".download">Download</button>
                 </div>
 
-                <ul id="projects-list">
+                <div id="projects-list">
                     <!-- RPi4 Tablet | December 2021 -->
-                    <li class="project hardware">
+                    <div class="project hardware">
                         <a href="https://www.youtube.com/watch?v=ULbkvY4s8aI" data-fancybox="gallery-24" data-caption="rpi-tablet-desc" title="RPi4 Tablet">
                             <img src="projects/rpi4-tablet/thumb.jpg"/>
                             <h2 class="title">RPi4 Tablet</h2>
@@ -293,10 +294,10 @@
                                 with a Lebula 7" TouchScreen Monitor kit. I installed LineageOS 19.0 (Android 12) as OS using KonstaKANG's build.
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     <!-- listcerts.com | September 2021 -->
-                    <li class="project website">
+                    <div class="project website">
                         <a href="projects/listcerts.com/landing-page.png" data-fancybox="gallery-23" data-caption="listcerts-desc" title="listcerts.com">
                             <img src="projects/listcerts.com/thumb.jpg"/>
                             <h2 class="title">listcerts.com</h2>
@@ -309,10 +310,10 @@
                                 certificate chain for that connection. Go to <a href="https://listcerts.com" target="_blank">https://listcerts.com</a>
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     <!-- IPCC Sixth Assessment Report on Climate Change | August 2021 -->
-                    <li class="project video">
+                    <div class="project video">
                         <a href="https://www.youtube.com/watch?v=h3GqJ3G8pDE" data-fancybox="gallery-22" data-caption="ipcc-desc" title="IPCC Sixth Assessment Report with Bulgarian Subtitles">
                             <img src="projects/IPCC-6/thumb.jpg" />
                             <h2 class="title">IPCC Sixth Assessment Report in Bulgarian</h2>
@@ -325,10 +326,10 @@
                                 a response with permission.
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     <!-- Glasat na Bulgaria 2020 v YouTube | June 2020 - July 2020, Jan 2022 -->
-                    <li class="project website">
+                    <div class="project website">
                         <a href="projects/glasat2020/glasat2020-1.jpg" data-fancybox="gallery-21" data-caption="glas20-desc" title="The Voice of Bulgaria 2020 on YouTube">
                             <img src="projects/glasat2020/thumb.jpg" />
                             <h2 class="title">The Voice of Bulgaria 2020 on YouTube</h2>
@@ -341,10 +342,10 @@
                                 the artists by their view count and likes from YouTube: <a href="https://www.glasat2020.com" target="_blank">https://www.glasat2020.com</a>
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     <!-- Can & Sanem | April 2020 -->
-                    <li class="project video">
+                    <div class="project video">
                         <a href="https://www.youtube.com/watch?v=jrP304CWbv4" data-fancybox="gallery-20" data-caption="can-sanem-desc" title="Can & Sanem">
                             <img src="projects/CanSanem/thumb.jpg" />
                             <h2 class="title">Can & Sanem</h2>
@@ -357,10 +358,10 @@
                                 of the song for the viewers and fans of the show in Bulgaria.
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     <!-- beeTV Plus | Apr 2020 - August 2020 -->
-                    <li class="project mobile download">
+                    <div class="project mobile download">
                         <a href="https://www.youtube.com/watch?v=RSMxzZADCLs" data-fancybox="gallery-19" data-caption="beeTV-plus-desc" title="beeTV Plus Android app">
                             <img src="projects/beeTV-Plus/thumb.jpg" alt="beeTV Plus Android app">
                             <h2 class="title">beeTV-Plus</h2>
@@ -380,10 +381,10 @@
                                 <a href="projects/beeTV-Plus/beeTV-Plus-2.5-release.apk"><i>&#xea36;</i> Download</a>
                             </div>
                         </div>
-                    </li>
+                    </div>
 
                     <!-- Svetat 2037 | Mar 2017 - May 2017 -->
-                    <li class="project website">
+                    <div class="project website">
                         <a href="projects/Svetat2037/1.jpg" data-fancybox="gallery-18" data-caption="svetat-2037-desc" title="Future Cities">
                             <img src="projects/Svetat2037/thumb.jpg" alt="Future Cities">
                             <h2 class="title">World 2037</h2>
@@ -401,10 +402,10 @@
                                 targeted students 8th-12th grade from the high school.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- Reading Music From Images | Sept 2012 - May 2013 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/RMFI/poster.jpg" data-fancybox="gallery-17" data-caption="rmfi-desc" title="Reading Music From Images">
                             <img src="projects/RMFI/thumb.jpg" />
                             <h2 class="title">Reading Music From Images</h2>
@@ -420,10 +421,10 @@
                                 The project was featured on the front page of The Daily Pennsylvanian on <a href="projects/RMFI/The DP 041513.pdf" target="_blank">April 15th, 2013</a>.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- wxReversi | April 2013 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/wxReversi/wxreversi.jpg" data-fancybox="gallery-16" data-caption="wxreversi-desc" title="wxReversi">
                             <img src="projects/wxReversi/thumb.jpg" />
                             <h2 class="title">wxReversi</h2>
@@ -435,10 +436,10 @@
                                 of Pennsylvania course on Haskell <a href="https://www.seas.upenn.edu/~cis194" target="_blank">CIS 194</a>.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- JamSesh | January 2013 -->
-                    <li class="project website pennapps">
+                    <div class="project website pennapps">
                         <a href="projects/JamSesh/jamsesh.jpg" data-fancybox="gallery-15" data-caption="jamsesh-desc" title="JamSesh">
                             <img src="projects/JamSesh/thumb.jpg" />
                             <h2 class="title">JamSesh</h2>
@@ -452,10 +453,10 @@
                                 Developed at <a href="https://2013s.pennapps.com/" target="_blank">PennApps 2013 S</a>.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- Lia | December 2012 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/Lia/lia.jpg" data-fancybox="gallery-14" data-caption="lia-desc" title="Lia">
                             <img src="projects/Lia/thumb.jpg" />
                             <h2 class="title">Lia</h2>
@@ -466,10 +467,10 @@
                                 written in Haskell. Supports both vector and matrix calculations.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- WineSquare | April 2012 -->
-                    <li class="project website coursep">
+                    <div class="project website coursep">
                         <a href="projects/WineSquare/winesquare.jpg" data-fancybox="gallery-13" data-caption="ws-desc" title="WineSquare">
                             <img src="projects/WineSquare/thumb.jpg" />
                             <h2 class="title">WineSquare</h2>
@@ -481,10 +482,10 @@
                                 they receive as awards. WineSquare is also great for discovering new wines with its database of over 2,300 different brands.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- Superscalar Processor | April 2012 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/Superscalar/superscalar.jpg" data-fancybox="gallery-12" data-caption="supp-desc" title="Superscalar Processor">
                             <img src="projects/Superscalar/thumb.jpg" />
                             <h2 class="title">Superscalar Processor</h2>
@@ -496,10 +497,10 @@
                                 University of Pennsylvania. The model was written in Verilog using a programmable board and a development environment by Xilinx.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- Lemonlime | Dec 2010 - Jan 2012 -->
-                    <li class="project website">
+                    <div class="project website">
                         <a href="projects/Lemonlime/interface.jpg" data-fancybox="gallery-11" data-caption="ll-desc" title="Lemonlime">
                             <img src="projects/Lemonlime/thumb.jpg" />
                             <h2 class="title">Lemonlime</h2>
@@ -513,10 +514,10 @@
                                 at PennVention 2011.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- MixMaster | January 2012 -->
-                    <li class="project mobile pennapps">
+                    <div class="project mobile pennapps">
                         <a href="https://www.youtube.com/watch?v=b9KiTuXk95o" data-fancybox="gallery-10" data-caption="mixm-desc" title="MixMaster">
                             <img src="projects/MixMaster/thumb.jpg" />
                             <h2 class="title">MixMaster</h2>
@@ -530,10 +531,10 @@
                                 at <a href="https://2012s.pennapps.com/" target="_blank">PennApps Spring 2012</a>.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- MyTube | December 2011 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/MyTube/mytube.jpg" data-fancybox="gallery-9" data-caption="mytube-desc" title="MyTube">
                             <img src="projects/MyTube/thumb.jpg" />
                             <h2 class="title">MyTube</h2>
@@ -546,10 +547,10 @@
                                 YouTube commercials.
                             </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- PennOS | December 2011 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/PennOS/pennos.jpg" data-fancybox="gallery-8" data-caption="pennos-desc" title="PennOS">
                             <img src="projects/PennOS/thumb.jpg" />
                             <h2 class="title">PennOS</h2>
@@ -559,11 +560,12 @@
                             <div class="description">© 2012 Stefan Zhelyazkov, Sandy Sun, Ruxin Ho, Bob Han. PennOS is a Unix-based guest operating system with its own scheduler 
                                 and a file system. It contains some of the basic OS functionalities like job control, file handling, printing to screen, and processes priorities. 
                                 PennOS was written entirely in C.
+                            </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- Social+ | September 2011 -->
-                    <li class="project mobile pennapps">
+                    <div class="project mobile pennapps">
                         <a href="https://www.youtube.com/watch?v=W2bHQ3jDA_k" data-fancybox="gallery-7" data-caption="socialplus-desc" title="Social+">
                             <img src="projects/Social+/thumb.jpg" />
                             <h2 class="title">Social+</h2>
@@ -577,11 +579,12 @@
                                 <a href="http://2011f.pennapps.com/blog/2011/9/18/congratulations-to-the-winners.html" target="_blank">Top Windows Phone 7 App</a> award 
                                 sponsored by Microsoft and the <a href="http://2011f.pennapps.com/blog/2011/9/26/congratulations-to-social-on-winning-the-student-choice-awar.html" target="_blank">Student Choice Award</a> 
                                 out of 41 teams, sponsored by First Round Capital, at <a href="http://2011f.pennapps.com/" target="_blank">PennApps Data</a> in September 2011.
+                            </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- OAT Compiler | April 2011 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/OAT Compiler/bubble-trouble.jpg" data-fancybox="gallery-6" data-caption="oat-desc" title="OAT Compiler / Bubble Trouble">
                             <img src="projects/OAT Compiler/thumb.jpg" />
                             <h2 class="title">OAT Compiler</h2>
@@ -593,11 +596,12 @@
                                 over the course of a semester in the University of Pennsylvania course on Compilers <a href="https://www.cis.upenn.edu/~cis341" target="_blank">CIS 341</a>. 
                                 The OAT compiler was written in OCaml and the game <a href="https://github.com/emish/Bubble-Trouble" target="_blank">Bubble Trouble</a> was created 
                                 as a final assignment in the course.
+                            </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- PennQuiz | April 2011 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/PennQuiz/pennquiz.jpg" data-fancybox="gallery-5" data-caption="pennquiz-desc" title="PennQuiz">
                             <img src="projects/PennQuiz/thumb.jpg" />
                             <h2 class="title">PennQuiz</h2>
@@ -609,11 +613,12 @@
                                 he/she answers the questions. After a round is complete, the challenged user has the option to "challenge back". Then the original sender of the 
                                 questions has to answer them as well. The winner from the duel receives extra points. The goal of the game is to gain the highest number of 
                                 points among your friends.
+                            </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- PyPlay | April 2011 -->
-                    <li class="project coursep">
+                    <div class="project coursep">
                         <a href="projects/PyPlay/pyplay.jpg" data-fancybox="gallery-4" data-caption="pyplay-desc" title="PyPlay">
                             <img src="projects/PyPlay/thumb.jpg" />
                             <h2 class="title">PyPlay</h2>
@@ -624,11 +629,12 @@
                                 control the playing mode of the player, a playback slider that shows the length of the track, an album art picture that relates to the song played 
                                 and a playlist where songs get ordered alphabetically. In PyPlay you can add a single song or a whole folder. Once you add a folder, all songs 
                                 get listed in the playlist window alphabetically.
+                            </div>
                         </div>
-                    </li>
+                    </div>
                 
                     <!-- Biblioteka | January 2011 -->
-                    <li class="project mobile pennapps">
+                    <div class="project mobile pennapps">
                         <a href="projects/Biblioteka/biblioteka.jpg" data-fancybox="gallery-3" data-caption="biblioteka-desc" title="Biblioteka">
                             <img src="projects/Biblioteka/thumb.jpg" />
                             <h2 class="title">Biblioteka</h2>
@@ -638,11 +644,12 @@
                             <div class="description">© 2011 Stefan Zhelyazkov, Jinyan Cao, Alex Zhang. Mobile version of the UPenn Library Catalog with the feature of mapping a book 
                                 to a location in the biggest University library - Van Pelt. Ended up 2nd/31 teams for the Student Choice Award at 
                                 <a href="http://pennapps.com/spring2011/" target="_blank">PennApps Mobile</a> in January 2011.
+                            </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- Breakout | April 2010 -->
-                    <li class="project coursep download">
+                    <div class="project coursep download">
                         <a href="projects/Breakout/breakout.jpg" data-fancybox="gallery-2" data-caption="breakout-desc" title="Breakout">
                             <img src="projects/Breakout/thumb.jpg" />
                             <h2 class="title">Breakout</h2>
@@ -653,11 +660,12 @@
                                 and one power-up on each level - the superball. The game was developed as a homework assignment for the University of Pennsylvania introductory course on 
                                 Computer Science <a href="https://www.seas.upenn.edu/~cis120/" target="_blank">CIS 120</a>. 
                                 <a href="projects/Breakout/Breakout.jar"><i>&#xea36;</i> Download</a>
+                            </div>
                         </div>
-                    </li>
+                    </div>
                     
                     <!-- SpaceInvaders | December 2009 -->
-                    <li class="project coursep download">
+                    <div class="project coursep download">
                         <a href="projects/SpaceInvaders/spaceinvaders.jpg" data-fancybox="gallery-1" data-caption="si-desc" title="SpaceInvaders">
                             <img src="projects/SpaceInvaders/thumb.jpg" />
                             <h2 class="title">SpaceInvaders</h2>
@@ -668,9 +676,10 @@
                                 enhance the shooting speed. The game was developed as a homework assignment for the University of Pennsylvania introductory course on Computer Science 
                                 <a href="https://www.seas.upenn.edu/~cis110/" target="_blank">CIS 110</a>.
                                 <a href="projects/SpaceInvaders/SpaceInvaders.jar"><i>&#xea36;</i> Download</a>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </section>
             <!-- /Projects -->
 

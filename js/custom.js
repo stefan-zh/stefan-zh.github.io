@@ -37,42 +37,53 @@ jQuery(document).ready(function () {
 	/* ---------------------------------------------------------------------- */
 
 	// Needed variables
-	const $pfilter = $('#projects-filter');
-	const $plist = $('#projects-list');
+	// const $pfilter = $('#projects-filter');
+	// const $plist = $('#projects-list');
 
 	// Deselect current and select new current
-	$pfilter.find('a').click(function () {
+	$('#projects-filter').find('button').click(function () {
 		$(this).parent().find('.current').removeClass('current');
 		$(this).addClass('current');
 	});
 
-	// Run Isotope  
-	$plist.isotope({
-		itemSelector: '.project',
-		filter: '*',
-		layoutMode: 'masonry',
-		animationOptions: {
-			duration: 750,
-			easing: 'linear'
+	// Run MixItUp 3
+	// https://www.kunkalabs.com/mixitup/docs/get-started/
+	mixitup('#projects-list', {
+		selectors: {
+			target: '.project'
+		},
+		animation: {
+			duration: 750
 		}
 	});
 
+	// Run Isotope  
+	// $plist.isotope({
+	// 	itemSelector: '.project',
+	// 	filter: '*',
+	// 	layoutMode: 'masonry',
+	// 	animationOptions: {
+	// 		duration: 750,
+	// 		easing: 'linear'
+	// 	}
+	// });
+
 	// Isotope Filter 
-	$pfilter.find('a').click(function () {
-		const selector = $(this).attr('data-filter');
-		$plist.isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false,
-			}
-		});
-		return false;
-	});
+	// $pfilter.find('a').click(function () {
+	// 	const selector = $(this).attr('data-filter');
+	// 	$plist.isotope({
+	// 		filter: selector,
+	// 		animationOptions: {
+	// 			duration: 750,
+	// 			easing: 'linear',
+	// 			queue: false,
+	// 		}
+	// 	});
+	// 	return false;
+	// });
 
 	// Portfolio image animation 
-	$plist.find('img').adipoli({
+	$('#projects-list').find('img').adipoli({
 		'startEffect': 'transparent',
 		'hoverEffect': 'boxRandom',
 		'imageOpacity': 0.6,

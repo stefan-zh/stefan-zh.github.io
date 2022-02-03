@@ -320,20 +320,26 @@ footer {
 	border-bottom: 1px solid #ededed;
 	padding: 10px 0 25px;
 }
-#projects-filter a {
+#projects-filter button {
 	background-color: #666;
 	color: #fff;
 	padding: 6px;
+	border: none;
+	font-size: 1em;
+	cursor: pointer;
 }
-#projects-filter a:hover {
+#projects-filter button:hover {
 	background-color: #fdc750;
 }
-#projects-filter a.current {
+#projects-filter button.current {
 	background-color: #fdc750;
 }
 
 #projects-list {
-	width: 820px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 .project {
 	background-color: #fbfbfb;
