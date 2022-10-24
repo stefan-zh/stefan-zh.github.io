@@ -268,6 +268,13 @@ footer {
 	color: #666;
 	margin-top: 5px;
 }
+.timeline-unit .inner-title {
+	border-left: 1px solid #fdc750;
+	color: #999;
+	font-size: 13px;
+	margin: 5px 0;
+	padding-left: 10px;
+}
 .timeline-unit .title {
 	display: flex;
 	justify-content: space-between;
@@ -275,7 +282,7 @@ footer {
 .timeline-unit .timeline-date {
 	color: #fdc750;
 	font-size: 14px;
-	padding: 2px 6px;
+	margin: auto 0;
 }
 
 .skills-section {
