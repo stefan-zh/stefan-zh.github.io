@@ -106,26 +106,24 @@ footer {
 	font-family: 'icomoon';
 }
 
-.socialicons {
+.top-buttons {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
+}
+.linkgroup {
+	display: flex;
 	gap: 2px;
 }
-.socialicons * {
-	background-color: #222;
-	color: #FFF;
+.linkgroup * {
+	padding: 9px;
 }
-.socialicons a {
+.linkgroup a:hover {
+	color: #fdc750;
+}
+.linkgroup .icon {
 	font-family: 'icomoon';
 	font-size: 16px;
 	padding: 6px 8px;
-}
-.socialicons a:hover {
-	color: #fdc750;
-}
-.socialicons .socials-text {
-	height: 10px;
-	padding: 9px;
 }
 
 #profile {
