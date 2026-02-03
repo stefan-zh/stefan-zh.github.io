@@ -198,9 +198,12 @@ footer {
 	font-weight: 300;
 	text-align: center;
 	width: 115px;
-	transition: top ease 0.5s;
 	position: relative;
 	top: 0;
+}
+.tabs li > a:not(.active) {
+	/* only transition up the non-active tabs to avoid flickering */
+	transition: top ease 0.5s;
 }
 /** 
  * only apply hover style on devices with hover capabilities
@@ -213,7 +216,7 @@ footer {
 	}
 }
 .tabs li.active {
-	margin-top: -11px;
+	margin-top: -10px;
 	background: url('../images/tab-hover.png') no-repeat;
 }
 .tabs li.active a {
