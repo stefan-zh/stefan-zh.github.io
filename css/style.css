@@ -114,7 +114,7 @@ footer {
 	display: flex;
 	gap: 2px;
 }
-.linkgroup * {
+.linkgroup a {
 	padding: 9px;
 }
 .linkgroup a:hover {
